@@ -12,8 +12,21 @@ Feature: doing a presentation in front of an audience
     | Problems   |
     | Solutions  |
  
-  Scenario: Navigation between different navigational points on landscape
+  Scenario: Navigating to arbitrary navigational point on the landscape
+    Given the current position is at "Title"
+    And I see the content of "Title"
+    When I go to "Problems"
+    Then I should see the content of "Problems"
+
+  Scenario: Navigating backwards within the list of navigational points on landscape
     Given the current position is at "Problems"
+    And I see the content of "Problems"
+    When I go "forward"
+    Then I should see the content of "Solutions"
+
+  Scenario: Navigating backwards within the list of navigational points on landscape
+    Given the current position is at "Problems"
+    And I see the content of "Problems"
     When I go "back"
     Then I should see the content of "Advantages"
 
