@@ -7,6 +7,7 @@ Feature: Fassets integration
   Background: 
     Given a user named "robert" is logged into the Fassets system
 
+  @tbd
   Scenario: import assets from Fassets’ tray
     Given the tray of "robert" contains these items
     | name      | type  |
@@ -14,6 +15,7 @@ Feature: Fassets integration
     When I choose "telephone"
     Then the asset named "telephone" should be imported
 
+  @tbd
   Scenario: store presentation in Fassets
     Given a presentation
     When I put it on Fassets’ tray

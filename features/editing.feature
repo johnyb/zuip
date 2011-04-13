@@ -3,6 +3,7 @@ Feature: editing presentations
   In order to create nice presentations editors want to
   manage the content of the landscape they are working on.
 
+  @tbd
   Scenario: Grouping objects
     Given a landscape containing the objects
     | name    |
@@ -17,6 +18,7 @@ Feature: editing presentations
     Then the landscape contains 1 group with 2 objects
     But bicycle does not belong to a group
 
+  @tbd
   Scenario: add assets
     Given a landscape
     When I add an asset of "Image" type named "car.png"
