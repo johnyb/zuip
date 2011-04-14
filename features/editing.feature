@@ -5,14 +5,14 @@ Feature: editing presentations
 
   Scenario: Grouping objects
     Given a landscape containing the objects
-    | name    |
-    | car     |
-    | bicycle |
-    | train   |
+      | name    |
+      | car     |
+      | bicycle |
+      | train   |
     When I select the objects
-    | name  |
-    | car   |
-    | train |
+      | name  |
+      | car   |
+      | train |
     And I group the selected objects
     Then the landscape contains 1 group with 2 objects
     But bicycle does not belong to a group

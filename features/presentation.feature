@@ -6,11 +6,11 @@ Feature: doing a presentation in front of an audience
   Background:
     Given a presentation "About Zooming Presentations"
     Given a list of navigational points
-    | name       |
-    | Title      |
-    | Advantages |
-    | Problems   |
-    | Solutions  |
+      | name       |
+      | Title      |
+     | Advantages |
+     | Problems   |
+     | Solutions  |
  
   Scenario: Navigating to arbitrary navigational point on the landscape
     Given the current position is at "Title"
