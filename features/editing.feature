@@ -23,3 +23,11 @@ Feature: editing presentations
     And I add an asset of "Text" type named "headline"
     Then the landscape contains 2 objects
 
+  Scenario: moving objects
+    Given a landscape containing the objects
+      | name  |
+      | car   |
+      | train |
+    When I move "car" to "(100,100)"
+    Then the object "car" is rendered at "(100,100)"
+

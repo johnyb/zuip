@@ -19,3 +19,12 @@ Feature: Fassets integration
     When I put it on Fassets’ tray
     Then my tray should contain the presentation
 
+  Scenario: create overviews from multiple presentations in fassets
+    Given the tray of "robert" contains these items
+      | name        | type         |
+      | History     | Presentation |
+      | Technology  | Presentation |
+      | Realisation | Presentation |
+    When I generate an overview
+    Then the landscape contains 3 groups with many objects
+
