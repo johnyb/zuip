@@ -2,7 +2,7 @@ Feature: Fassets integration
 
   As an asset store and content management system, Fassets can be used to
   manage content that can be loaded into a presentation.
-  Users should be able to easily integrate content from Fassets into zuip.
+  Authors should be able to easily integrate content from Fassets into zuip.
 
   Background:
     Given a user named "robert" is logged into the Fassets system

@@ -1,6 +1,6 @@
 Feature: editing presentations
 
-  In order to create nice presentations editors want to
+  In order to create nice presentations authors want to
   manage the content of the landscape they are working on.
 
   @tbd

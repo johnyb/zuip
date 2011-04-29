@@ -1,6 +1,6 @@
 Feature: Persistance for presentations
 
-  As an editor I want to have persistant access to my
+  As an author I want to have persistant access to my
   creations in order to stop editing and start again, later.
 
   Scenario: storing presentation on disk
