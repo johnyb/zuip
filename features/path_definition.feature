@@ -1,9 +1,7 @@
 Feature: Defining a presentation as a path through the image
 
-  When the landscape of the presentation is layed out, it’s time to think about
-  a specific path through this landscape. Therefore landmarks need to be defined
-  at some points and a list of landmarks needs to be stored to define a sequential
-  path. This path can then be used to jump between these landmarks to stop at this
-  point and tell the audience something about the content that is shown.
+  A presentation can be defined as a sequential list of waypoints throughout
+  the map that has been layed out by the author. As an author I want to define
+  such a path through the content in order to create a specific presentation.
 
 
