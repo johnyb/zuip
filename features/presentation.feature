@@ -1,7 +1,7 @@
 Feature: doing a presentation in front of an audience
 
   When presenting contents in front of an audience, the user expects some support. This will help
-  to deliver a good talk and result in confidentiality for both, speaker and listener.
+  to deliver a good talk and result in satisfaction for both, speaker and listener.
 
   Background:
     Given a presentation "About Zooming Presentations"
