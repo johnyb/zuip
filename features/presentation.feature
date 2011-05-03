@@ -8,30 +8,37 @@ Feature: doing a presentation in front of an audience
     Given a list of waypoints
       | name       |
       | Title      |
-      | Advantages |
-      | Problems   |
+      | Slides     |
+      | + Advantages |
+      | + Problems   |
+      | ZUI Presentations |
+      | + Advantages |
+      | + Problems   |
       | Solutions  |
+      | + Prezi    |
+      | + CounterPoint |
+      | + ZUIP     |
 
   @tbd
   Scenario: Navigating to arbitrary waypoint on the landscape
     Given the current position is at "Title"
     And I see the content of "Title"
-    When I go to "Problems"
-    Then I should see the content of "Problems"
+    When I go to "Slides + Problems"
+    Then I should see the content of "Slides + Problems"
 
   @tbd
   Scenario: Navigating backwards within the list of waypoints on landscape
-    Given the current position is at "Problems"
-    And I see the content of "Problems"
+    Given the current position is at "Slides + Problems"
+    And I see the content of "Slides + Problems"
     When I go "forward"
-    Then I should see the content of "Solutions"
+    Then I should see the content of "ZUI Presentations"
 
   @tbd
   Scenario: Navigating backwards within the list of waypoints on landscape
-    Given the current position is at "Problems"
-    And I see the content of "Problems"
+    Given the current position is at "Slides + Problems"
+    And I see the content of "Slides + Problems"
     When I go "back"
-    Then I should see the content of "Advantages"
+    Then I should see the content of "Slides + Advantages"
 
   @tbd
   Scenario: semantic zooming
