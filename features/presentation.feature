@@ -48,3 +48,24 @@ Feature: doing a presentation in front of an audience
     Then there should be 1 object "with" details visible
     And there should be 1 object "without" details visible
 
+  @tbd
+  Scenario: zooming in
+    Given the current position is at "Title"
+    And I can see an element "title"
+    When I zoom in
+    Then the element "title" should be larger
+
+  @tbd
+  Scenario: zooming out
+    Given the current position is at "Title"
+    And I can see an element "title"
+    When I zoom out
+    Then the element "title" should be smaller
+
+  @tbd
+  Scenario: panning
+    Given the current position is at "Title"
+    And I can see an element "title"
+    When I pan 100 pixels to the left
+    Then the element "title" should be moved by (-100,0)
+
