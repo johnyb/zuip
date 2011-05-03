@@ -5,7 +5,7 @@ Feature: doing a presentation in front of an audience
 
   Background:
     Given a presentation "About Zooming Presentations"
-    Given a list of navigational points
+    Given a list of waypoints
       | name       |
       | Title      |
       | Advantages |
@@ -13,21 +13,21 @@ Feature: doing a presentation in front of an audience
       | Solutions  |
 
   @tbd
-  Scenario: Navigating to arbitrary navigational point on the landscape
+  Scenario: Navigating to arbitrary waypoint on the landscape
     Given the current position is at "Title"
     And I see the content of "Title"
     When I go to "Problems"
     Then I should see the content of "Problems"
 
   @tbd
-  Scenario: Navigating backwards within the list of navigational points on landscape
+  Scenario: Navigating backwards within the list of waypoints on landscape
     Given the current position is at "Problems"
     And I see the content of "Problems"
     When I go "forward"
     Then I should see the content of "Solutions"
 
   @tbd
-  Scenario: Navigating backwards within the list of navigational points on landscape
+  Scenario: Navigating backwards within the list of waypoints on landscape
     Given the current position is at "Problems"
     And I see the content of "Problems"
     When I go "back"
