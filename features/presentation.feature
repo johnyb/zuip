@@ -5,7 +5,7 @@ Feature: doing a presentation in front of an audience
 
   Background:
     Given a presentation "About Zooming Presentations"
-    Given a list of waypoints
+    Given the outline
       | name       |
       | Title      |
       | Slides     |
