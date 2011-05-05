@@ -20,10 +20,17 @@ Feature: doing a presentation in front of an audience
       | + ZUIP     |
 
   @tbd
+  Scenario: display the outline
+    Given the element "outline" is "hidden"
+    When I press "b"
+    Then the element "outline" is "visible"
+
+  @tbd
   Scenario: Navigating to arbitrary waypoint on the landscape
     Given the current position is at "Title"
     And I see the content of "Title"
-    When I go to "Slides + Problems"
+    When I open the outline
+    And I go to "Slides + Problems"
     Then I should see the content of "Slides + Problems"
 
   @tbd
