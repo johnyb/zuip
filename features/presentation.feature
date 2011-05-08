@@ -19,13 +19,13 @@ Feature: doing a presentation in front of an audience
       | + CounterPoint |
       | + ZUIP     |
 
-  @tbd
+  @tbd @it3
   Scenario: display the outline
     Given the element "outline" is "hidden"
     When I press "b"
     Then the element "outline" is "visible"
 
-  @tbd
+  @tbd @it3
   Scenario: Navigating to arbitrary waypoint on the landscape
     Given the current position is at "Title"
     And I see the content of "Title"
@@ -33,21 +33,21 @@ Feature: doing a presentation in front of an audience
     And I go to "Slides + Problems"
     Then I should see the content of "Slides + Problems"
 
-  @tbd
+  @tbd @it2
   Scenario: Navigating backwards within the list of waypoints on landscape
     Given the current position is at "Slides + Problems"
     And I see the content of "Slides + Problems"
     When I go "forward"
     Then I should see the content of "ZUI Presentations"
 
-  @tbd
+  @tbd @it2
   Scenario: Navigating backwards within the list of waypoints on landscape
     Given the current position is at "Slides + Problems"
     And I see the content of "Slides + Problems"
     When I go "back"
     Then I should see the content of "Slides + Advantages"
 
-  @tbd
+  @tbd @it4
   Scenario: semantic zooming
     Given current view contains a "large" Object
     And current view contains a "very small" Object
@@ -55,21 +55,21 @@ Feature: doing a presentation in front of an audience
     Then there should be 1 object "with" details visible
     And there should be 1 object "without" details visible
 
-  @tbd
+  @tbd @it1
   Scenario: zooming in
     Given the current position is at "Title"
     And I can see an element "title"
     When I zoom in
     Then the element "title" should be larger
 
-  @tbd
+  @tbd @it1
   Scenario: zooming out
     Given the current position is at "Title"
     And I can see an element "title"
     When I zoom out
     Then the element "title" should be smaller
 
-  @tbd
+  @tbd @it1
   Scenario: panning
     Given the current position is at "Title"
     And I can see an element "title"
