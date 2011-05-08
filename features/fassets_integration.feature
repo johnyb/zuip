@@ -21,6 +21,7 @@ Feature: Fassets integration
     When I put it on Fassets’ tray
     Then my tray should contain the presentation
 
+  @tbd
   Scenario: create overviews from multiple presentations in fassets
     Given the tray of "robert" contains these items
       | name        | type         |

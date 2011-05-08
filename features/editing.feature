@@ -25,6 +25,7 @@ Feature: editing presentations
     And I add an asset of "Text" type named "headline"
     Then the landscape contains 2 objects
 
+  @tbd
   Scenario: moving objects
     Given a landscape containing the objects
       | name  |
