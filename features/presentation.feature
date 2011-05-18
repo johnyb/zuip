@@ -19,13 +19,13 @@ Feature: doing a presentation in front of an audience
       | + CounterPoint |
       | + ZUIP     |
 
-  @tbd @it3
+  @tbd @it2
   Scenario: display the outline
     Given the element "outline" is "hidden"
     When I press "b"
     Then the element "outline" is "visible"
 
-  @tbd @it3
+  @tbd @it2
   Scenario: Navigating to arbitrary waypoint on the landscape
     Given the current position is at "Title"
     And I see the content of "Title"
