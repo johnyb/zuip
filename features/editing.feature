@@ -4,7 +4,23 @@ Feature: editing presentations
   manage the content of the landscape they are working on.
 
   @tbd @it3
-  Scenario: Grouping objects
+  Scenario: Ungroup objects
+    Given a landscape containing the objects
+      | name    |
+      | car     |
+      | bicycle |
+      | train   |
+    And these objects belong to a group
+      | name  |
+      | car   |
+      | train |
+    When I select the group
+    And I ungroup the selected objects
+    Then the landscape contains no groups
+    But the landscape contains 3 objects
+
+  @tbd @it3
+  Scenario: Group objects
     Given a landscape containing the objects
       | name    |
       | car     |
@@ -16,7 +32,18 @@ Feature: editing presentations
       | train |
     And I group the selected objects
     Then the landscape contains 1 group with 2 objects
-    But bicycle does not belong to a group
+    But "bicycle" does not belong to a group
+
+  @tbd @it3
+  Scenario: remove assets
+    Given a landscape containing the objects
+      | name    |
+      | car     |
+      | bicycle |
+      | train   |
+    When I select all objects
+    And I press the "del" key
+    Then the landscape contains no objects
 
   @tbd @it3
   Scenario: add assets
@@ -26,7 +53,7 @@ Feature: editing presentations
     Then the landscape contains 2 objects
 
   @tbd @it3
-  Scenario: moving objects
+  Scenario: move objects
     Given a landscape containing the objects
       | name  |
       | car   |
