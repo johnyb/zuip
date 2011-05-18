@@ -34,7 +34,7 @@ Feature: doing a presentation in front of an audience
     Then I should see the content of "Slides + Problems"
 
   @tbd @it2
-  Scenario: Navigating backwards within the list of waypoints on landscape
+  Scenario: Navigating forwards within the list of waypoints on landscape
     Given the current position is at "Slides + Problems"
     And I see the content of "Slides + Problems"
     When I go "forward"
