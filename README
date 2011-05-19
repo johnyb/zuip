@@ -1,4 +1,5 @@
-# ZUIP - Presentations with zoomable user interface #
+ZUIP - Presentations with zoomable user interface
+=================================================
 
 Features are described using the gherkin language. You can use cucumber to run them.
 
