@@ -8,7 +8,7 @@ Feature: Fassets integration
     Given a user named "robert" is logged into the Fassets system
 
   @tbd
-  Scenario: import assets from Fassets’ tray
+  Scenario: Import assets from Fassets’ tray
     Given the tray of "robert" contains these items
       | name      | type  |
       | telephone | Image |
@@ -16,13 +16,13 @@ Feature: Fassets integration
     Then the asset named "telephone" should be imported
 
   @tbd
-  Scenario: store presentation in Fassets
+  Scenario: Store presentation in Fassets
     Given a presentation
     When I put it on Fassets’ tray
     Then my tray should contain the presentation
 
   @tbd
-  Scenario: create overviews from multiple presentations in fassets
+  Scenario: Create overviews from multiple presentations in fassets
     Given the tray of "robert" contains these items
       | name        | type         |
       | History     | Presentation |

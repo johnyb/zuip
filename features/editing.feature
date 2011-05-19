@@ -1,4 +1,4 @@
-Feature: editing presentations
+Feature: Editing presentations
 
   In order to create nice presentations authors want to
   manage the content of the landscape they are working on.
@@ -35,7 +35,7 @@ Feature: editing presentations
     But "bicycle" does not belong to a group
 
   @tbd @it3
-  Scenario: remove assets
+  Scenario: Remove assets
     Given a landscape containing the objects
       | name    |
       | car     |
@@ -46,14 +46,14 @@ Feature: editing presentations
     Then the landscape contains no objects
 
   @tbd @it3
-  Scenario: add assets
+  Scenario: Add assets
     Given a landscape
     When I add an asset of "Image" type named "car.png"
     And I add an asset of "Text" type named "headline"
     Then the landscape contains 2 objects
 
   @tbd @it3
-  Scenario: move objects
+  Scenario: Move objects
     Given a landscape containing the objects
       | name  |
       | car   |

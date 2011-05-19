@@ -20,7 +20,7 @@ Feature: doing a presentation in front of an audience
       | + ZUIP     |
 
   @tbd @it2
-  Scenario: display the outline
+  Scenario: Display the outline
     Given the element "outline" is "hidden"
     When I press "b"
     Then the element "outline" is "visible"
@@ -48,7 +48,7 @@ Feature: doing a presentation in front of an audience
     Then I should see the content of "Slides + Advantages"
 
   @tbd @it4
-  Scenario: semantic zooming
+  Scenario: Semantic zooming
     Given current view contains a "large" Object
     And current view contains a "very small" Object
     When the view is shown to the user
@@ -56,21 +56,21 @@ Feature: doing a presentation in front of an audience
     And there should be 1 object "without" details visible
 
   @tbd @it1
-  Scenario: zooming in
+  Scenario: Zooming in
     Given the current position is at "Title"
     And I can see an element "title"
     When I zoom in
     Then the element "title" should be larger
 
   @tbd @it1
-  Scenario: zooming out
+  Scenario: Zooming out
     Given the current position is at "Title"
     And I can see an element "title"
     When I zoom out
     Then the element "title" should be smaller
 
   @tbd @it1
-  Scenario: panning
+  Scenario: Panning
     Given the current position is at "Title"
     And I can see an element "title"
     When I pan 100 pixels to the left
