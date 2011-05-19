@@ -47,7 +47,7 @@ Feature: doing a presentation in front of an audience
     When I go "back"
     Then I should see the content of "Slides + Advantages"
 
-  @tbd @it4
+  @tbd @it8
   Scenario: Semantic zooming
     Given current view contains a "large" Object
     And current view contains a "very small" Object
