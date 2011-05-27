@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe "presentations" do
 
   it "can be instantiated" do
