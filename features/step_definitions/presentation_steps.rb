@@ -1,5 +1,5 @@
-Given /^a presentation "([^"]*)"$/ do |title|
-  @presentation = Presentation.new
+Given /^a ZUI presentation "([^"]*)"$/ do |title|
+  @presentation = ZUIP::Presentation.new
   @presentation.title = title
 end
 

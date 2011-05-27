@@ -4,7 +4,7 @@ Feature: doing a presentation in front of an audience
   to deliver a good talk and result in satisfaction for both, speaker and listener.
 
   Background:
-    Given a presentation "About Zooming Presentations"
+    Given a ZUI presentation "About Zooming Presentations"
     Given the outline
       | name       |
       | Title      |
