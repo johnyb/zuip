@@ -1,7 +1,7 @@
-Feature: Defining a presentation as a path through the image
+Feature: Defining a presentation as a path through the landscape
 
   A presentation can be defined as a sequential list of waypoints throughout
-  the map that has been layed out by the author. As an author I want to define
+  the landscape that has been layed out by the author. As an author I want to define
   such a path through the content in order to create a specific presentation.
 
   @tbd @it4
