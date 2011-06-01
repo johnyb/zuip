@@ -7,17 +7,17 @@ Feature: doing a presentation in front of an audience
     Given a ZUI presentation "About Zooming Presentations"
     Given the outline
       | name       |
-      | Title      |
-      | Slides     |
-      | + Advantages |
-      | + Problems   |
-      | ZUI Presentations |
-      | + Advantages |
-      | + Problems   |
-      | Solutions  |
-      | + Prezi    |
-      | + CounterPoint |
-      | + ZUIP     |
+      | # Title #  |
+      | # Slides # |
+      | ## Advantages ## |
+      | ## Problems ##   |
+      | # ZUI Presentations # |
+      | ## Advantages ## |
+      | ## Problems ## |
+      | # Solutions # |
+      | ## Prezi ## |
+      | ## CounterPoint ## |
+      | ## ZUIP ##  |
 
   @tbd @it2
   Scenario: Display the outline
