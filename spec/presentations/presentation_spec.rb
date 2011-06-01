@@ -1,13 +1,13 @@
 require 'spec_helper'
 
-describe "presentations" do
+describe "A Presentation" do
+  let(:p) { ZUIP::Presentation.new }
 
   it "can be instantiated" do
-    p = ZUIP::Presentation.new
+    p.should_not be(nil)
   end
 
   it "should have a title" do
-    p = ZUIP::Presentation.new
     p.title = "test title"
     p.title.should == "test title"
   end
