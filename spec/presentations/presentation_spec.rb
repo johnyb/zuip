@@ -12,5 +12,21 @@ describe "A Presentation" do
     p.title.should == "test title"
   end
 
+  context "has an outline which" do
+    let(:op) { p.outline = %w{"# Title #" "## Advantages ##" "## Disadvantages ##" }; p }
+
+    it "should be provided as an array" do
+      op.outline.size.should == 3
+    end
+
+    it "should have a current position" do
+      op.current.should == "# Title #"
+    end
+
+    it "should have a changable current position" do
+      op.current = "## Advantages ##"
+      op.current.should == "## Advantages ##"
+    end
+  end
 end
 
