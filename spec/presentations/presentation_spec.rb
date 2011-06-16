@@ -13,7 +13,7 @@ describe "A Presentation" do
   end
 
   context "has an outline which" do
-    let(:op) { p.outline = %w{"# Title #" "## Advantages ##" "## Disadvantages ##" }; p }
+    let(:op) { p.outline = ["# Title #", "## Advantages ##", "## Disadvantages ##"]; p }
 
     it "should be provided as an array" do
       op.outline.size.should == 3
