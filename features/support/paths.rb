@@ -28,6 +28,22 @@ module NavigationHelpers
       end
     end
   end
+
+  def path_to_presentation(title)
+    case title
+    when /^About Zooming Presentations$/
+      path_to_presentation("presentations")
+    else
+      begin
+        path = "#{::Rails.root}/spec/fixtures/#{title.underscore}.svg"
+        raise Errno::ENOENT unless File.exist?(path)
+        path
+      rescue Errno::ENOENT
+        raise "Can't find presentation with title \"#{title}\".\n" +
+            "Now, go and add a mapping in #{__FILE__}"
+      end
+    end
+  end
 end
 
 World(NavigationHelpers)

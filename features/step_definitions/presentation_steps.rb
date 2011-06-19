@@ -1,6 +1,7 @@
 Given /^a ZUI presentation "([^"]*)"$/ do |title|
   @presentation = Zuip::Presentation.new
   @presentation.title = title
+  @presentation.path = path_to_presentation(title)
 end
 
 Given /^the outline$/ do |table|
