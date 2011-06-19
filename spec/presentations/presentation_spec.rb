@@ -20,10 +20,12 @@ describe "A Presentation" do
     end
 
     it "should have a current position" do
+      pending "needs implementation"
       op.current.should == "# Title #"
     end
 
     it "should have a changable current position" do
+      pending "needs implementation"
       op.current = "## Advantages ##"
       op.current.should == "## Advantages ##"
     end
