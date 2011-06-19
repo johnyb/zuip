@@ -1,0 +1,9 @@
+<% title( presentation.title )%>
+<div id="map">
+</div>
+<script language="javascript">
+  function loadBaseLayer() {
+    zuip = new OpenLayers.Layer.ScalableInlineXhtml( '<%= presentation.title %>', '<%= zuip_path(name) %>', new OpenLayers.Bounds(0,0,1024,768), new OpenLayers.Size(80,60),{isBaseLayer: true, numZoomLevels: 20} );
+    map.addLayers([zuip]);
+  }
+</script>
