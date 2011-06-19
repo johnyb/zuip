@@ -1,5 +1,5 @@
 Given /^a ZUI presentation "([^"]*)"$/ do |title|
-  @presentation = ZUIP::Presentation.new
+  @presentation = Zuip::Presentation.new
   @presentation.title = title
 end
 

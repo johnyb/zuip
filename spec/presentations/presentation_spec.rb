@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "A Presentation" do
-  let(:p) { ZUIP::Presentation.new }
+  let(:p) { Zuip::Presentation.new }
 
   it "can be instantiated" do
     p.should_not be(nil)

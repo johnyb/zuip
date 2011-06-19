@@ -1,4 +1,4 @@
-module ZUIP
+module Zuip
   class Presentation
     attr_accessor :title
     attr_reader :outline
