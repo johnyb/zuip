@@ -3,14 +3,34 @@
 
 var map;
 function init_map(){
+  // FIXME: rails root_path needs to be taken into account here!
   OpenLayers.ImgPath = '/images/'
+
+  controls =
+  [
+    new OpenLayers.Control.Navigation(),
+    new OpenLayers.Control.PanZoomBar(),
+    new OpenLayers.Control.LayerSwitcher(),
+    new OpenLayers.Control.Permalink('permalink'),
+    new OpenLayers.Control.KeyboardDefaults(),
+  ]
+  options =
+  {
+    controls : controls,
+    fractionalZoom : true,
+  }
+
   // HACK: temporarily override internal method to fix stylesheet loading
   tmp = OpenLayers._getScriptLocation;
+  // FIXME: rails root_path needs to be taken into account here!
   OpenLayers._getScriptLocation = function() { return '/'; };
-  map = new OpenLayers.Map('map');
+  map = new OpenLayers.Map('map', options);
   OpenLayers._getScriptLocation = tmp;
-  map.addControl(new OpenLayers.Control.LayerSwitcher());
+
   // this will be defined in app/views/zuip/presentation/show.html.erb
   loadBaseLayer();
-  map.zoomToExtent(new OpenLayers.Bounds(0, 0, 1024, 768));
+
+  if (!map.getCenter()) {
+    map.zoomToMaxExtent();
+  }
 }
