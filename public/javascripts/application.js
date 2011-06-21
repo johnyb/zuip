@@ -20,12 +20,7 @@ function init_map(){
     fractionalZoom : true,
   }
 
-  // HACK: temporarily override internal method to fix stylesheet loading
-  tmp = OpenLayers._getScriptLocation;
-  // FIXME: rails root_path needs to be taken into account here!
-  OpenLayers._getScriptLocation = function() { return '/'; };
   map = new OpenLayers.Map('map', options);
-  OpenLayers._getScriptLocation = tmp;
 
   // this will be defined in app/views/zuip/presentation/show.html.erb
   loadBaseLayer();
