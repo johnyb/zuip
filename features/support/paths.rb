@@ -44,6 +44,16 @@ module NavigationHelpers
       end
     end
   end
+
+  def params_for_waypoint(name)
+    case name
+    when /^Title$/
+      '?zoom=7.863888888888889&lat=18849.26478&lon=21906.20852&layers=B'
+    else
+      raise "Can't find mapping from \"#{name}\" to a waypoint.\n" +
+          "Now, go and add a mapping in #{__FILE__}"
+    end
+  end
 end
 
 World(NavigationHelpers)
