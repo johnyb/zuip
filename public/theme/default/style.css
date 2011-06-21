@@ -1,7 +1,7 @@
 div.olMap {
     z-index: 0;
-    padding: 0px!important;
-    margin: 0px!important;
+    padding: 0!important;
+    margin: 0!important;
     cursor: default;
 }
 
@@ -11,15 +11,22 @@ div.olMapViewport {
 
 div.olLayerDiv {
    -moz-user-select: none;
+   -khtml-user-select: none;
 }
 
 .olLayerGoogleCopyright {
     left: 2px;
-    bottom: 2px;  
+    bottom: 2px;
+}
+.olLayerGoogleV3.olLayerGoogleCopyright {
+    right: auto !important;
 }
 .olLayerGooglePoweredBy {
     left: 2px;
     bottom: 15px;   
+}
+.olLayerGoogleV3.olLayerGooglePoweredBy {
+    bottom: 15px !important;
 }
 .olControlAttribution {
     font-size: smaller; 
@@ -63,7 +70,7 @@ div.olLayerDiv {
 } 
 
 div.olControlMousePosition {
-    bottom: 0em;
+    bottom: 0;
     right: 3px;
     display: block;
     position: absolute;
@@ -73,8 +80,8 @@ div.olControlMousePosition {
 
 .olControlOverviewMapContainer {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
 }
 
 .olControlOverviewMapElement {
@@ -84,12 +91,12 @@ div.olControlMousePosition {
 }
 
 .olControlOverviewMapMinimizeButton {
-    right: 0px;
+    right: 0;
     bottom: 80px;
 }    
 
 .olControlOverviewMapMaximizeButton {
-    right: 0px;
+    right: 0;
     bottom: 80px;
 }
 
@@ -129,8 +136,8 @@ div.olControlMousePosition {
     overflow: auto;
 }    
 .olControlNavToolbar { 
-    width:0px;
-    height:0px;
+    width: 0;
+    height: 0;
 }    
 .olControlNavToolbar div { 
   display:block;
@@ -149,13 +156,13 @@ div.olControlMousePosition {
 
 }
 .olControlNavigationHistoryPreviousItemActive { 
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 .olControlNavigationHistoryPreviousItemInactive { 
-   background-position: 0px -24px;
+   background-position: 0 -24px;
 }
 .olControlNavigationHistoryNextItemActive { 
-   background-position: -24px 0px;
+   background-position: -24px 0;
 }
 .olControlNavigationHistoryNextItemInactive { 
    background-position: -24px -24px;
@@ -180,7 +187,7 @@ div.olControlMousePosition {
 }
 .olControlEditingToolbar  {
     float:right;
-    right: 0px;
+    right: 0;
     height: 30px; 
     width: 200px;
 }
@@ -196,22 +203,22 @@ div.olControlMousePosition {
   background-position: -103px -23px; 
 }
 .olControlEditingToolbar .olControlNavigationItemInactive { 
-  background-position: -103px -0px; 
+  background-position: -103px 0; 
 }
 .olControlEditingToolbar .olControlDrawFeaturePointItemActive { 
   background-position: -77px -23px; 
 }
 .olControlEditingToolbar .olControlDrawFeaturePointItemInactive { 
-  background-position: -77px -0px; 
+  background-position: -77px 0; 
 }
 .olControlEditingToolbar .olControlDrawFeaturePathItemInactive { 
-  background-position: -51px 0px; 
+  background-position: -51px 0; 
 }
 .olControlEditingToolbar .olControlDrawFeaturePathItemActive { 
   background-position: -51px -23px; 
 }
 .olControlEditingToolbar .olControlDrawFeaturePolygonItemInactive { 
-  background-position: -26px 0px; 
+  background-position: -26px 0; 
 }
 .olControlEditingToolbar .olControlDrawFeaturePolygonItemActive { 
   background-position: -26px -23px ;                                                                   
@@ -219,12 +226,12 @@ div.olControlMousePosition {
 div.olControlSaveFeaturesItemActive { 
     background-image: url(img/save_features_on.png);
     background-repeat: no-repeat;
-    background-position: 0px 1px;
+    background-position: 0 1px;
 }
 div.olControlSaveFeaturesItemInactive { 
     background-image: url(img/save_features_off.png);
     background-repeat: no-repeat;
-    background-position: 0px 1px;
+    background-position: 0 1px;
 }
 
 .olHandlerBoxZoomBox {
@@ -258,20 +265,20 @@ div.olControlSaveFeaturesItemInactive {
 }
 
 .olControlPanPanel .olControlPanNorthItemInactive {
-    top: 0px;
+    top: 0;
     left: 9px;
-    background-position: 0px 0px;
+    background-position: 0 0;
 }
 .olControlPanPanel .olControlPanSouthItemInactive {
     top: 36px;
     left: 9px;
-    background-position: 18px 0px;
+    background-position: 18px 0;
 }
 .olControlPanPanel .olControlPanWestItemInactive {
     position: absolute;
     top: 18px;
-    left: 0px;
-    background-position: 0px 18px;
+    left: 0;
+    background-position: 0 18px;
 }
 .olControlPanPanel .olControlPanEastItemInactive {
     top: 18px;
@@ -293,21 +300,21 @@ div.olControlSaveFeaturesItemInactive {
 }
 
 .olControlZoomPanel .olControlZoomInItemInactive {
-    top: 0px;
-    left: 0px;
-    background-position: 0px 0px;
+    top: 0;
+    left: 0;
+    background-position: 0 0;
 }
 
 .olControlZoomPanel .olControlZoomToMaxExtentItemInactive {
     top: 18px;
-    left: 0px;
-    background-position: 0px -18px;
+    left: 0;
+    background-position: 0 -18px;
 }
 
 .olControlZoomPanel .olControlZoomOutItemInactive {
     top: 36px;
-    left: 0px;
-    background-position: 0px 18px;
+    left: 0;
+    background-position: 0 18px;
 }
 
 .olPopupCloseBox {
@@ -322,6 +329,7 @@ div.olControlSaveFeaturesItemInactive {
 
 .olControlNoSelect {
  -moz-user-select: none;
+ -khtml-user-select: none;
 }
 
 .olImageLoadError {
@@ -356,7 +364,7 @@ div.olControlSaveFeaturesItemInactive {
 .olControlLayerSwitcher {
     position: absolute;
     top: 25px;
-    right: 0px;
+    right: 0;
     width: 20em;
     font-family: sans-serif;
     font-weight: bold;
@@ -393,5 +401,12 @@ div.olControlSaveFeaturesItemInactive {
 .olControlLayerSwitcher .maximizeDiv,
 .olControlLayerSwitcher .minimizeDiv {
     top: 5px;
-    right: 0px;
+    right: 0;
+}
+
+.olBingAttribution {
+    color: #DDD;
+}
+.olBingAttribution.road {
+    color: #333;
 }
