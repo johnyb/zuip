@@ -19,13 +19,13 @@ Feature: doing a presentation in front of an audience
       | ## CounterPoint ## |
       | ## ZUIP ##  |
 
-  @tbd @it2
+  @it2 @wip
   Scenario: Display the outline
     Given the element "outline" is "hidden"
     When I press "b"
     Then the element "outline" is "visible"
 
-  @tbd @it2
+  @it2 @tbd
   Scenario: Navigating to arbitrary waypoint on the landscape
     Given the current position is at "Title"
     And I see the content of "Title"
@@ -33,14 +33,14 @@ Feature: doing a presentation in front of an audience
     And I go to "Slides + Problems"
     Then I should see the content of "Slides + Problems"
 
-  @tbd @it2
+  @it2 @tbd
   Scenario: Navigating forwards within the list of waypoints on landscape
     Given the current position is at "Slides + Problems"
     And I see the content of "Slides + Problems"
     When I go "forward"
     Then I should see the content of "ZUI Presentations"
 
-  @tbd @it2
+  @it2 @tbd
   Scenario: Navigating backwards within the list of waypoints on landscape
     Given the current position is at "Slides + Problems"
     And I see the content of "Slides + Problems"
