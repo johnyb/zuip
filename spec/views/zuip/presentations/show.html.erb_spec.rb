@@ -17,4 +17,29 @@ describe "zuip/presentations/show.html.erb" do
     render
     rendered.should contain("function loadBaseLayer(")
   end
+
+  describe "renders an outline panel which" do
+    it "should be hideable by the user" do
+      render
+      rendered.should have_selector("div", :id => "outline_panel")
+      rendered.should have_selector("ol", :id => "outline")
+    end
+
+    it "should contain an outline" do
+      p.stub(:outline) { ["# Title #",
+                          "# Slides #",
+                          "## Advantages ##",
+                          "## Problems ##",
+                          "# ZUI Presentations #",
+                          "## Advantages ##",
+                          "## Problems ##",
+                          "# Solutions #",
+                          "## Prezi ##",
+                          "## CounterPoint ##",
+                          "## ZUIP ##"]
+            }
+      render
+      p.outline.each { |name| rendered.should have_selector("ol#outline > li", :content => name ) }
+    end
+  end
 end
