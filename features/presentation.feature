@@ -60,18 +60,18 @@ Feature: doing a presentation in front of an audience
     Given the current position is at "Title"
     And I can see an element "title"
     When I zoom in
-    Then the element "title" should be larger
+    Then the elements should be larger
 
   @it1 @wip
   Scenario: Zooming out
     Given the current position is at "Title"
     And I can see an element "title"
     When I zoom out
-    Then the element "title" should be smaller
+    Then the elements should be smaller
 
   @it1 @wip
   Scenario: Panning
     Given the current position is at "Title"
     And I can see an element "title"
-    When I pan 100 pixels to the left
-    Then the element "title" should be moved by (-100,0)
+    When I pan to the left
+    Then the elements should be more left
