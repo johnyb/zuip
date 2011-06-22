@@ -21,9 +21,9 @@ Feature: doing a presentation in front of an audience
 
   @it2 @wip
   Scenario: Display the outline
-    Given the element "outline" is "hidden"
+    Given the element "outline" is hidden
     When I press "b"
-    Then the element "outline" is "visible"
+    Then the element "outline" is visible
 
   @it2 @tbd
   Scenario: Navigating to arbitrary waypoint on the landscape

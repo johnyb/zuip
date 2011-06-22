@@ -10,3 +10,12 @@ Given /^the outline$/ do |table|
   @presentation.outline = outline
   @presentation.outline.size.should == table.hashes.size
 end
+
+Given /^the element "([^"]*)" is hidden$/ do |id|
+  page.should have_css("##{id}")
+  page.execute_script("$('##{id}').hide();")
+end
+
+Then /^the element "([^"]*)" is visible$/ do |id|
+  find("##{id}").visible?.should be_true
+end
