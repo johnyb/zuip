@@ -19,6 +19,8 @@
    sodipodi:docname="presentations.svg"
    width="100%"
    height="100%">
+  <title
+     id="title3105">About Zooming Presentations</title>
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -29,8 +31,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.67752295"
-     inkscape:cx="432.16849"
-     inkscape:cy="985.40449"
+     inkscape:cx="198.96606"
+     inkscape:cy="749.25013"
      inkscape:document-units="px"
      inkscape:current-layer="svg2"
      showgrid="false"
@@ -39,10 +41,10 @@
      fit-margin-left="50"
      fit-margin-right="50"
      fit-margin-bottom="50"
-     inkscape:window-width="1024"
-     inkscape:window-height="600"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="1280"
+     inkscape:window-height="1004"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -52,7 +54,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title>About Zooming Presentations</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -107,7 +109,7 @@
      id="text2989"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       id="tspan2991"
+       id="title"
        x="-279.77246"
        y="134.90947">Presentations</tspan></text>
   <text
