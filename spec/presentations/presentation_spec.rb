@@ -25,7 +25,7 @@ describe "A Presentation" do
       p.title.should == "About Zooming Presentations"
     end
 
-    it "should be provided as an array" do
+    it "should have an outline provided as an array" do
       pending "needs implementation"
       p.outline.should == outline
     end
