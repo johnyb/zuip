@@ -4,7 +4,7 @@ describe Zuip::PresentationsController do
 
   describe "GET 'show'" do
     it "should be successful with parameter \"name\"" do
-      get 'show', :name => "test"
+      get 'show', :name => "presentations"
       response.should be_success
       response.should render_template("zuip/presentations/show")
     end

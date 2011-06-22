@@ -1,33 +1,33 @@
 require 'spec_helper'
 
 describe "A Presentation" do
-  let(:p) { Zuip::Presentation.new }
+  let(:p) { Zuip::Presentation.new(:source => "#{RSpec.configuration.fixture_path}/presentations.svg") }
 
   it "can be instantiated" do
     p.should_not be(nil)
   end
 
-  it "should have a title" do
-    p.title = "test title"
-    p.title.should == "test title"
-  end
+  context "with information parsed from the SVG file" do
+    let(:outline) { ["# Title #",
+                     "# Slides #",
+                     "## Advantages ##",
+                     "## Problems ##",
+                     "# ZUI Presentations #",
+                     "## Advantages ##",
+                     "## Problems ##",
+                     "# Solutions #",
+                     "## Prezi ##",
+                     "## CounterPoint ##",
+                     "## ZUIP ##"]
+                  }
 
-  context "has an outline which" do
-    let(:op) { p.outline = ["# Title #", "## Advantages ##", "## Disadvantages ##"]; p }
+    it "should have a title" do
+      p.title.should == "About Zooming Presentations"
+    end
 
     it "should be provided as an array" do
-      op.outline.size.should == 3
-    end
-
-    it "should have a current position" do
       pending "needs implementation"
-      op.current.should == "# Title #"
-    end
-
-    it "should have a changable current position" do
-      pending "needs implementation"
-      op.current = "## Advantages ##"
-      op.current.should == "## Advantages ##"
+      p.outline.should == outline
     end
   end
 end
