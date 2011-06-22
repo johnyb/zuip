@@ -1,31 +1,36 @@
 Given /^the current position is at "([^"]*)"$/ do |name|
-  pending # express the regexp above with the code you wish you had
+    visit "/zuip/presentations/presentations#{params_for_waypoint(name)}"
 end
 
-Given /^I can see an element "([^"]*)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Given /^I can see an element "([^"]*)"$/ do |id|
+  page.should have_css("##{id}")
+  @initial_zoom = page.evaluate_script('map.zoom')
+  @initial_lon, @initial_lat = page.evaluate_script('map.center.toShortString()').split(', ')
 end
 
 When /^I zoom in$/ do
-  pending # express the regexp above with the code you wish you had
+  page.execute_script("map.zoomIn();")
 end
 
-Then /^the element "([^"]*)" should be larger$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then /^the elements? should be larger$/ do
+  page.evaluate_script('map.getZoom();').should > @initial_zoom
 end
 
 When /^I zoom out$/ do
-  pending # express the regexp above with the code you wish you had
+  page.execute_script("map.zoomOut();")
 end
 
-Then /^the element "([^"]*)" should be smaller$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then /^the elements? should be smaller$/ do
+  page.evaluate_script('map.getZoom();').should < @initial_zoom
 end
 
-When /^I pan (\d+) pixels to the left$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+When /^I pan to the left$/ do
+  #run pan operation without animation because it broke the test (center does not change)
+  page.execute_script("map.pan(-map.getSize().w / 4,0, {animate : false});")
 end
 
-Then /^the element "([^"]*)" should be moved by \(\-(\d+),(\d+)\)$/ do |arg1, arg2, arg3|
-  pending # express the regexp above with the code you wish you had
+Then /^the elements? should be more left$/ do
+  lon,lat = page.evaluate_script('map.getCenter().toShortString()').split(', ')
+  lon.should < @initial_lon
+  lat.should == @initial_lat
 end
