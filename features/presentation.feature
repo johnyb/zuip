@@ -55,21 +55,21 @@ Feature: doing a presentation in front of an audience
     Then there should be 1 object "with" details visible
     And there should be 1 object "without" details visible
 
-  @it1 @wip
+  @javascript
   Scenario: Zooming in
     Given the current position is at "Title"
     And I can see an element "title"
     When I zoom in
     Then the elements should be larger
 
-  @it1 @wip
+  @javascript
   Scenario: Zooming out
     Given the current position is at "Title"
     And I can see an element "title"
     When I zoom out
     Then the elements should be smaller
 
-  @it1 @wip
+  @javascript
   Scenario: Panning
     Given the current position is at "Title"
     And I can see an element "title"
