@@ -6,6 +6,7 @@ module Zuip
 
     def initialize(s)
       self.source=s[:source]
+      @outline = []
     end
 
     def title
