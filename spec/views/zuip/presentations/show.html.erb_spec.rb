@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe "zuip/presentations/show.html.erb" do
   before(:each) do
-    p = double(Zuip::Presentation, :title => "Test title")
-    view.stub(:presentation) { p }
+    @p = double(Zuip::Presentation, :title => "Test title", :outline => [])
+    assign(:presentation, @p)
     view.stub(:name) { "test_name" }
   end
 
@@ -26,7 +26,7 @@ describe "zuip/presentations/show.html.erb" do
     end
 
     it "should contain an outline" do
-      p.stub(:outline) { ["# Title #",
+      @p.stub(:outline) { ["# Title #",
                           "# Slides #",
                           "## Advantages ##",
                           "## Problems ##",
@@ -39,7 +39,7 @@ describe "zuip/presentations/show.html.erb" do
                           "## ZUIP ##"]
             }
       render
-      p.outline.each { |name| rendered.should have_selector("ol#outline > li", :content => name ) }
+      @p.outline.each { |name| rendered.should have_selector("ol#outline > li", :content => name ) }
     end
   end
 end

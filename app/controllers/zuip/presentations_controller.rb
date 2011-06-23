@@ -4,8 +4,8 @@ class Zuip::PresentationsController < ApplicationController
 
   def show
     path = File.join([Rails.root.to_s, "public", zuip_path(params[:name])])
-    presentation = Zuip::Presentation.new(:source => path)
-    render :locals => { :presentation => presentation, :name => params[:name] }
+    @presentation = Zuip::Presentation.new(:source => path)
+    render :locals => { :name => params[:name] }
   end
 
 end
