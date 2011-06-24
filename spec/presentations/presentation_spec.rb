@@ -25,6 +25,20 @@ describe "A Presentation" do
       p.title.should == "About Zooming Presentations"
     end
 
+    it "should raise an error if no title is found" do
+      xml = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+      <svg xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <metadata><rdf:RDF>
+      </rdf:RDF></metadata>
+      </svg>'
+      p.instance_eval {@doc = Nokogiri::XML.parse(xml) }
+      begin
+        p.title.should be_nil
+      rescue Zuip::ParsingError, Nokogiri::XML::XPath::SyntaxError
+        #these are fine
+      end
+    end
+
     it "should have an outline provided as an array" do
       pending "needs implementation"
       p.outline.should == outline
