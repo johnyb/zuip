@@ -40,9 +40,7 @@ describe "A Presentation" do
     end
 
     it "should have an outline provided as an array" do
-      pending "needs implementation"
       p.outline.should == outline
     end
   end
 end
-
