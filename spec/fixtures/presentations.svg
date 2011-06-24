@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -22,7 +23,70 @@
   <title
      id="title3105">About Zooming Presentations</title>
   <defs
-     id="defs4" />
+     id="defs4">
+    <linearGradient
+       id="linearGradient3807"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3809" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       id="filter3849-2"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.296443"
+         id="feGaussianBlur3851-5" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3849-2-6"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.296443"
+         id="feGaussianBlur3851-5-1" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3849-2-65"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.296443"
+         id="feGaussianBlur3851-5-2" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3849-2-6-5"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.296443"
+         id="feGaussianBlur3851-5-1-7" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3849-2-6-9"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.296443"
+         id="feGaussianBlur3851-5-1-78" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3849-2-6-3"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.296443"
+         id="feGaussianBlur3851-5-1-4" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -30,9 +94,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.67752295"
-     inkscape:cx="198.96606"
-     inkscape:cy="749.25013"
+     inkscape:zoom="0.25283667"
+     inkscape:cx="210.09675"
+     inkscape:cy="836.69056"
      inkscape:document-units="px"
      inkscape:current-layer="svg2"
      showgrid="false"
@@ -75,97 +139,6 @@
       </cc:License>
     </rdf:RDF>
   </metadata>
-  <rect
-     x="-300"
-     y="375"
-     width="500"
-     height="200"
-     fill="green"
-     opacity=".1"
-     id="rect2989" />
-  <rect
-     x="225"
-     y="375"
-     width="500"
-     height="200"
-     fill="green"
-     opacity=".1"
-     id="rect2991" />
-  <rect
-     x="-300"
-     y="600"
-     width="500"
-     height="200"
-     fill="red"
-     opacity=".1"
-     id="rect2993" />
-  <rect
-     x="225"
-     y="600"
-     width="500"
-     height="200"
-     fill="red"
-     opacity=".1"
-     id="rect2995" />
-  <text
-     xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-     x="317.84021"
-     y="330.33783"
-     id="text2985"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan2987"
-       x="317.84021"
-       y="330.33783">ZUI Presentations</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:154.12817383px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-     x="-279.77246"
-     y="134.90947"
-     id="text2989"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="title"
-       x="-279.77246"
-       y="134.90947">Presentations</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-     x="-77.600449"
-     y="300.93359"
-     id="text2993"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan2995"
-       x="-77.600449"
-       y="300.93359">Slide-Show</tspan><tspan
-       sodipodi:role="line"
-       x="-77.600449"
-       y="350.93359"
-       id="tspan2997">Presentations</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-     x="-545.71429"
-     y="466.64792"
-     id="text3053"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3055"
-       x="-545.71429"
-       y="466.64792">advantages</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-     x="-525.71429"
-     y="686.64789"
-     id="text3057"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3059"
-       x="-525.71429"
-       y="686.64789">Problems</tspan></text>
   <flowRoot
      xml:space="preserve"
      id="flowRoot3061"
@@ -176,97 +149,347 @@
          height="765.71429"
          x="-1054.2858"
          y="6.6478968" /></flowRegion><flowPara
-       id="flowPara3067" /></flowRoot>  <text
-     xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-     x="-254.28571"
-     y="-119.06639"
-     id="text3069"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3071"
-       x="-254.28571"
-       y="-119.06639">Prezi</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-     x="128.57143"
-     y="-130.49495"
-     id="text3073"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3075"
-       x="128.57143"
-       y="-130.49495">CounterPoint</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-     x="660.45367"
-     y="-130.49496"
-     id="text3077"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3079"
-       x="660.45367"
-       y="-130.49496">ZUIP</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-     x="-157.27826"
-     y="446.75693"
-     id="text3018"
-     sodipodi:linespacing="150%"><tspan
-       sodipodi:role="line"
-       x="-157.27826"
-       y="446.75693"
-       id="tspan3044">Tools</tspan><tspan
-       sodipodi:role="line"
-       x="-157.27826"
-       y="482.75693"
-       id="tspan3042">Experience</tspan><tspan
-       sodipodi:role="line"
-       x="-157.27826"
-       y="518.75696"
-       id="tspan3034">Simplicity / linearity</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-     x="-175.457"
-     y="687.83344"
-     id="text3050"
-     sodipodi:linespacing="150%"><tspan
-       sodipodi:role="line"
-       x="-175.457"
-       y="687.83344"
-       id="tspan3056">Jumping between slides</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-     x="284.05283"
-     y="445.91559"
-     id="text3018-6"
-     sodipodi:linespacing="150%"><tspan
-       sodipodi:role="line"
-       x="284.05283"
-       y="445.91559"
-       id="tspan3044-9">Spatial coding of information</tspan><tspan
-       sodipodi:role="line"
-       x="284.05283"
-       y="481.91559"
-       id="tspan3042-3">Natural way of describing a topic</tspan><tspan
-       sodipodi:role="line"
-       x="284.05283"
-       y="517.91559"
-       id="tspan3034-7">Better orientation for the audience</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-     x="299.80081"
-     y="683.65814"
-     id="text3018-6-6"
-     sodipodi:linespacing="150%"><tspan
-       sodipodi:role="line"
-       x="299.80081"
-       y="683.65814"
-       id="tspan3034-7-7">Danger of motion-sickness</tspan></text>
+       id="flowPara3067" /></flowRoot>  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Presentation"
+     style="display:inline">
+    <rect
+       x="-296.17474"
+       y="364.0246"
+       width="500"
+       height="200"
+       id="rect2989"
+       style="opacity:0.1;fill:#008000" />
+    <rect
+       x="228.82526"
+       y="364.0246"
+       width="500"
+       height="200"
+       id="rect2991"
+       style="opacity:0.1;fill:#008000" />
+    <rect
+       x="-296.17474"
+       y="589.0246"
+       width="500"
+       height="200"
+       id="rect2993"
+       style="opacity:0.1;fill:#ff0000" />
+    <rect
+       x="228.82526"
+       y="589.0246"
+       width="500"
+       height="200"
+       id="rect2995"
+       style="opacity:0.1;fill:#ff0000" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="321.66544"
+       y="319.36243"
+       id="text2985"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2987"
+         x="321.66544"
+         y="319.36243">ZUI Presentations</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:154.12817383px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="-275.9472"
+       y="123.9341"
+       id="text2989"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2991"
+         x="-275.9472"
+         y="123.9341">Presentations</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="-73.775215"
+       y="289.95819"
+       id="text2993"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2995"
+         x="-73.775215"
+         y="289.95819">Slide-Show</tspan><tspan
+         sodipodi:role="line"
+         x="-73.775215"
+         y="339.95819"
+         id="tspan2997">Presentations</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="-541.88904"
+       y="455.67255"
+       id="text3053"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3055"
+         x="-541.88904"
+         y="455.67255">advantages</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="-521.88904"
+       y="675.67249"
+       id="text3057"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3059"
+         x="-521.88904"
+         y="675.67249">Problems</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="-250.46046"
+       y="-130.04175"
+       id="text3069"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3071"
+         x="-250.46046"
+         y="-130.04175">Prezi</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="132.39667"
+       y="-141.47031"
+       id="text3073"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3075"
+         x="132.39667"
+         y="-141.47031">CounterPoint</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="664.27887"
+       y="-141.47032"
+       id="text3077"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3079"
+         x="664.27887"
+         y="-141.47032">ZUIP</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="-153.453"
+       y="435.78156"
+       id="text3018"
+       sodipodi:linespacing="150%"><tspan
+         sodipodi:role="line"
+         x="-153.453"
+         y="435.78156"
+         id="tspan3044">Tools</tspan><tspan
+         sodipodi:role="line"
+         x="-153.453"
+         y="471.78156"
+         id="tspan3042">Experience</tspan><tspan
+         sodipodi:role="line"
+         x="-153.453"
+         y="507.78156"
+         id="tspan3034">Simplicity / linearity</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="-171.63176"
+       y="676.85803"
+       id="text3050"
+       sodipodi:linespacing="150%"><tspan
+         sodipodi:role="line"
+         x="-171.63176"
+         y="676.85803"
+         id="tspan3056">Jumping between slides</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="287.87805"
+       y="434.94019"
+       id="text3018-6"
+       sodipodi:linespacing="150%"><tspan
+         sodipodi:role="line"
+         x="287.87805"
+         y="434.94019"
+         id="tspan3044-9">Spatial coding of information</tspan><tspan
+         sodipodi:role="line"
+         x="287.87805"
+         y="470.94019"
+         id="tspan3042-3">Natural way of describing a topic</tspan><tspan
+         sodipodi:role="line"
+         x="287.87805"
+         y="506.94019"
+         id="tspan3034-7">Better orientation for the audience</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="303.62607"
+       y="672.68274"
+       id="text3018-6-6"
+       sodipodi:linespacing="150%"><tspan
+         sodipodi:role="line"
+         x="303.62607"
+         y="672.68274"
+         id="tspan3034-7-7">Danger of motion-sickness</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="waypoints"
+     style="display:inline"
+     class="waypoints">
+    <rect
+       style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:10.35644341;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;overflow:visible;filter:url(#filter3849-2);enable-background:accumulate"
+       id="title"
+       width="1163.7948"
+       height="673.35962"
+       x="-286.74637"
+       y="-57.728931"
+       transform="matrix(0.93234946,0,0,1,-46.347769,-202.47196)"
+       inkscape:label="Title">
+      <title
+         id="title3805">Title</title>
+    </rect>
+    <rect
+       inkscape:label="Title"
+       transform="matrix(0.34821437,0,0,0.37007694,-169.5851,194.73249)"
+       y="-57.728931"
+       x="-286.74637"
+       height="673.35962"
+       width="1163.7948"
+       id="rect2311"
+       style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate">
+      <title
+         id="title4011">Slides</title>
+    </rect>
+    <g
+       inkscape:groupmode="layer"
+       id="layer4"
+       inkscape:label="Slides"
+       style="display:inline">
+      <rect
+         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate"
+         id="rect4013"
+         width="1163.7948"
+         height="673.35962"
+         x="-286.74637"
+         y="-57.728931"
+         transform="matrix(0.34821437,0,0,0.37007694,-151.78705,370.73544)"
+         inkscape:label="Title">
+        <title
+           id="title4015">Advantages</title>
+      </rect>
+      <rect
+         inkscape:label="Title"
+         transform="matrix(0.34821437,0,0,0.37007694,-135.96656,586.28961)"
+         y="-57.728931"
+         x="-286.74637"
+         height="673.35962"
+         width="1163.7948"
+         id="rect4017"
+         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate">
+        <title
+           id="title4019">Problems</title>
+      </rect>
+    </g>
+    <rect
+       style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate"
+       id="rect4080"
+       width="1163.7948"
+       height="673.35962"
+       x="-286.74637"
+       y="-57.728931"
+       transform="matrix(0.34821437,0,0,0.37007694,378.19935,192.75493)"
+       inkscape:label="Title">
+      <title
+         id="title4082">ZUI Presentations</title>
+    </rect>
+    <g
+       style="display:inline"
+       inkscape:label="ZUI Presentations"
+       id="g4078"
+       inkscape:groupmode="layer">
+      <rect
+         inkscape:label="Title"
+         transform="matrix(0.34821437,0,0,0.37007694,358.42374,374.69056)"
+         y="-57.728931"
+         x="-286.74637"
+         height="673.35962"
+         width="1163.7948"
+         id="rect4084"
+         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate">
+        <title
+           id="title4086">Advantages</title>
+      </rect>
+      <rect
+         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate"
+         id="rect4088"
+         width="1163.7948"
+         height="673.35962"
+         x="-286.74637"
+         y="-57.728931"
+         transform="matrix(0.34821437,0,0,0.37007694,374.24423,590.24473)"
+         inkscape:label="Title">
+        <title
+           id="title4090">Problems</title>
+      </rect>
+    </g>
+    <rect
+       style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:7.82535648;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-65);enable-background:accumulate"
+       id="title-6"
+       width="1163.7948"
+       height="673.35962"
+       x="-286.74637"
+       y="-57.728931"
+       transform="matrix(1.1579106,0,0,1.4103169,-114.89993,-886.46785)"
+       inkscape:label="Title">
+      <title
+         id="title3805-5">Solutions</title>
+    </rect>
+    <g
+       inkscape:groupmode="layer"
+       id="layer5"
+       inkscape:label="Solutions"
+       style="display:inline">
+      <rect
+         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6-5);enable-background:accumulate"
+         id="rect4080-0"
+         width="1163.7948"
+         height="673.35962"
+         x="-286.74637"
+         y="-57.728931"
+         transform="matrix(0.34821437,0,0,0.37007694,-287.24999,-287.79245)"
+         inkscape:label="Title">
+        <title
+           id="title4082-8">Prezi</title>
+      </rect>
+      <rect
+         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6-9);enable-background:accumulate"
+         id="rect4080-2"
+         width="1163.7948"
+         height="673.35962"
+         x="-286.74637"
+         y="-57.728931"
+         transform="matrix(0.34821437,0,0,0.37007694,149.79103,-283.83733)"
+         inkscape:label="Title">
+        <title
+           id="title4082-5">CounterPoint</title>
+      </rect>
+      <rect
+         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:5.59535933;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6-3);enable-background:accumulate"
+         id="rect4080-9"
+         width="1163.7948"
+         height="673.35962"
+         x="-286.74637"
+         y="-57.728931"
+         transform="matrix(1.6645487,0,0,1.9188786,-288.16542,-288.72369)"
+         inkscape:label="Title">
+        <title
+           id="title4082-0">ZUIP</title>
+      </rect>
+    </g>
+  </g>
 </svg>
