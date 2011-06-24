@@ -10,7 +10,9 @@ module Zuip
     end
 
     def title
-      @doc.css('title').first.content
+      dc_titles = @doc.css('dc|title')
+      raise ParsingError unless dc_titles.count == 1
+      dc_titles.first.content
     end
 
     def outline=(o)
