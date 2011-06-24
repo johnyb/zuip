@@ -7,6 +7,9 @@ require 'rspec/rails'
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
+# copy fixture svg presentations to assets directory
+Dir[Rails.root.join("spec/fixtures/*.svg")].each {|f| FileUtils.copy(f,Rails.root.join("public/assets/zuip")) }
+
 RSpec.configure do |config|
   # == Mock Framework
   #
