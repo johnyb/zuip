@@ -19,10 +19,11 @@ Feature: doing a presentation in front of an audience
       | ## CounterPoint ## |
       | ## ZUIP ##  |
 
-  @it2 @wip
+  @it2 @wip @javascript
   Scenario: Display the outline
-    Given the element "outline" is hidden
-    When I press "b"
+    Given I am viewing the presentation about presentations
+    And the element "outline" is hidden
+    When I follow "Show Outline"
     Then the element "outline" is visible
 
   @it2 @tbd
