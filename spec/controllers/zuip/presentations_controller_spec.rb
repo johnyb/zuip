@@ -18,10 +18,9 @@ describe Zuip::PresentationsController do
       raise "Failed!" unless everything_fine
     end
 
-    it "should render the outline" do
-      pending "won’t work until we stub Zuip::Presentation.outline or implement it"
+    it "should provide a presentation containing an outline" do
       get 'show', :name => "presentations"
-      response.should render_template(:partial => "_outline", :count => 11)
+      assigns(:presentation).outline.size.should == 11
     end
   end
 
