@@ -19,7 +19,7 @@ Feature: doing a presentation in front of an audience
       | ## CounterPoint ## |
       | ## ZUIP ##  |
 
-  @it2 @wip @javascript
+  @it2 @javascript
   Scenario: Display the outline
     Given I am viewing the presentation about presentations
     And the element "outline" is hidden
