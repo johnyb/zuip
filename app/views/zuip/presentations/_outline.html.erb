@@ -1,1 +1,10 @@
-<li><%= item %></li>
+<div id="outline_panel" class="olControlOutlinePanel olControlNoSelect" unselectable="on">
+  <%= link_to_function image_tag('layer-switcher-maximize.png', :alt => t(:show_outline), :title => t(:show_outline)), "$('#outline').show(); $(this).next().show(); $(this).hide()", :class => 'maximizeDiv' %>
+  <%= link_to_function image_tag('layer-switcher-minimize.png', :alt => t(:hide_outline), :title => t(:hide_outline)), "$('#outline').hide(); $(this).prev().show(); $(this).hide()", :class => 'minimizeDiv' %>
+  <ol id="outline" class="outlineDiv">
+    <li><%=t :outline %></li>
+    <% for item in outline do %>
+      <li><%= item %></li>
+    <% end %>
+  </ol>
+</div>
