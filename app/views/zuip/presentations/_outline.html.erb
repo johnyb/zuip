@@ -1,4 +1,10 @@
 <div id="outline_panel" class="olControlOutlinePanel olControlNoSelect" unselectable="on">
+  <div style="background-color: transparent;">
+    <span style="background-color: darkblue; display: block; height: 1px; overflow: hidden; font-size: 1px; margin-left: 5px; margin-right: 0px; border-left-width: 0px; border-right-width: 0px; opacity: 0.75;"></span>
+    <span style="background-color: darkblue; display: block; height: 1px; overflow: hidden; font-size: 1px; margin-left: 3px; margin-right: 0px; border-left-width: 0px; border-right-width: 0px; opacity: 0.75;"></span>
+    <span style="background-color: darkblue; display: block; height: 1px; overflow: hidden; font-size: 1px; margin-left: 2px; margin-right: 0px; border-left-width: 0px; border-right-width: 0px; opacity: 0.75;"></span>
+    <span style="background-color: darkblue; display: block; height: 2px; overflow: hidden; font-size: 1px; margin-left: 1px; margin-right: 0px; border-left-width: 0px; border-right-width: 0px; opacity: 0.75;"></span>
+  </div>
   <%= link_to_function image_tag('layer-switcher-maximize.png', :alt => t(:show_outline), :title => t(:show_outline)), "$('#outline').show(); $(this).next().show(); $(this).hide()", :class => 'maximizeDiv', :id => :show_outline %>
   <%= link_to_function image_tag('layer-switcher-minimize.png', :alt => t(:hide_outline), :title => t(:hide_outline)), "$('#outline').hide(); $(this).prev().show(); $(this).hide()", :class => 'minimizeDiv', :id => :hide_outline %>
   <ol id="outline" class="outlineDiv">
@@ -7,4 +13,10 @@
       <li><%= item %></li>
     <% end %>
   </ol>
+  <div style="background-color: transparent;">
+    <span style="background-color: darkblue; display: block; height: 2px; overflow: hidden; font-size: 1px; margin-left: 1px; margin-right: 0px; border-left-width: 0px; border-right-width: 0px; opacity: 0.75;"></span>
+    <span style="background-color: darkblue; display: block; height: 1px; overflow: hidden; font-size: 1px; margin-left: 2px; margin-right: 0px; border-left-width: 0px; border-right-width: 0px; opacity: 0.75;"></span>
+    <span style="background-color: darkblue; display: block; height: 1px; overflow: hidden; font-size: 1px; margin-left: 3px; margin-right: 0px; border-left-width: 0px; border-right-width: 0px; opacity: 0.75;"></span>
+    <span style="background-color: darkblue; display: block; height: 1px; overflow: hidden; font-size: 1px; margin-left: 5px; margin-right: 0px; border-left-width: 0px; border-right-width: 0px; opacity: 0.75;"></span>
+  </div>
 </div>

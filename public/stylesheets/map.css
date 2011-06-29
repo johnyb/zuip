@@ -27,8 +27,14 @@ html, body, #map {
   padding : 10px 10px 10px 10px;
   margin-right : 18px;
   margin-top : 0px;
+  margin-bottom : 0px;
 }
 
+a.maximizeDiv {
+  float : right;
+  opacity : 0.75;
+  background-color : darkblue;
+}
 a.minimizeDiv {
   display : none;
   float : right;
