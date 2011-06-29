@@ -337,10 +337,10 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer1"
+     id="waypoints"
      inkscape:label="waypoints"
      style="display:inline"
-     class="waypoints">
+     class="waypoints head1">
     <rect
        style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:10.35644341;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;overflow:visible;filter:url(#filter3849-2);enable-background:accumulate"
        id="title"
@@ -353,6 +353,7 @@
       <title
          id="title3805">Title</title>
     </rect>
+    <g class="head2"/>
     <rect
        inkscape:label="Title"
        transform="matrix(0.34821437,0,0,0.37007694,-169.5851,194.73249)"
@@ -369,7 +370,8 @@
        inkscape:groupmode="layer"
        id="layer4"
        inkscape:label="Slides"
-       style="display:inline">
+       style="display:inline"
+       class="head2">
       <rect
          style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate"
          id="rect4013"
@@ -382,6 +384,7 @@
         <title
            id="title4015">Advantages</title>
       </rect>
+      <g class="head3"/>
       <rect
          inkscape:label="Title"
          transform="matrix(0.34821437,0,0,0.37007694,-135.96656,586.28961)"
@@ -394,6 +397,7 @@
         <title
            id="title4019">Problems</title>
       </rect>
+      <g class="head3"/>
     </g>
     <rect
        style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate"
@@ -411,7 +415,8 @@
        style="display:inline"
        inkscape:label="ZUI Presentations"
        id="g4078"
-       inkscape:groupmode="layer">
+       inkscape:groupmode="layer"
+       class="head2">
       <rect
          inkscape:label="Title"
          transform="matrix(0.34821437,0,0,0.37007694,358.42374,374.69056)"
@@ -424,6 +429,7 @@
         <title
            id="title4086">Advantages</title>
       </rect>
+      <g class="head3"/>
       <rect
          style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate"
          id="rect4088"
@@ -436,6 +442,7 @@
         <title
            id="title4090">Problems</title>
       </rect>
+      <g class="head3"/>
     </g>
     <rect
        style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:7.82535648;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-65);enable-background:accumulate"
@@ -453,7 +460,8 @@
        inkscape:groupmode="layer"
        id="layer5"
        inkscape:label="Solutions"
-       style="display:inline">
+       style="display:inline"
+       class="head2">
       <rect
          style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6-5);enable-background:accumulate"
          id="rect4080-0"
@@ -466,6 +474,7 @@
         <title
            id="title4082-8">Prezi</title>
       </rect>
+      <g class="head3"/>
       <rect
          style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6-9);enable-background:accumulate"
          id="rect4080-2"
@@ -478,6 +487,7 @@
         <title
            id="title4082-5">CounterPoint</title>
       </rect>
+      <g class="head3"/>
       <rect
          style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:5.59535933;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6-3);enable-background:accumulate"
          id="rect4080-9"
@@ -490,6 +500,7 @@
         <title
            id="title4082-0">ZUIP</title>
       </rect>
+      <g class="head3"/>
     </g>
   </g>
 </svg>
