@@ -1,12 +1,17 @@
 Given /^a ZUI presentation "([^"]*)"$/ do |title|
   @presentation = Zuip::Presentation.new(:source => path_to_presentation(title))
+  visit '/zuip/presentations/presentations'
 end
 
 Given /^the outline$/ do |table|
   # table is a Cucumber::Ast::Table
   outline = table.hashes.map{ |h| h[:name] }
-  @presentation.outline = outline
-  @presentation.outline.size.should == table.hashes.size
+  @presentation.outline.size.should == outline.size
+  @presentation.outline.should == outline
+end
+
+Given /^I see the content of "([^"]*)"$/ do |waypoint|
+  raise "I am getting implemented"
 end
 
 Given /^I am viewing the presentation about presentations$/ do

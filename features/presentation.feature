@@ -21,8 +21,7 @@ Feature: doing a presentation in front of an audience
 
   @it2 @javascript
   Scenario: Display the outline
-    Given I am viewing the presentation about presentations
-    And the element "outline" is hidden
+    Given the element "outline" is hidden
     When I follow "Show Outline"
     Then the element "outline" is visible
 
