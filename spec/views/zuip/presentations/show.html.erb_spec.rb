@@ -23,8 +23,8 @@ describe "zuip/presentations/show.html.erb" do
       render
       rendered.should have_selector("div", :id => "outline_panel")
       rendered.should have_selector("ol", :id => "outline")
-      rendered.should have_selector("a", :id => :hide_outline)
-      rendered.should have_selector("a", :id => :show_outline)
+      rendered.should have_selector("a", :id => "hide_outline")
+      rendered.should have_selector("a", :id => "show_outline")
     end
 
     it "should contain an outline" do
