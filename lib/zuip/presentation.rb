@@ -5,6 +5,8 @@ module Zuip
   end
 
   class Presentation
+    include Zuip::Parser
+    include Zuip::Outline
 
     def initialize(params)
       self.source=params[:source]
@@ -16,14 +18,9 @@ module Zuip
       dc_titles.first.content
     end
 
-    def outline=(o)
-      raise ArgumentException unless o.class == Array
-      @outline = o
-    end
-
     def outline
-      parse_outline if @outline.nil?
-      @outline
+      reload if @outline.nil?
+      @outline.to_a
     end
 
     def source=(s)
@@ -34,28 +31,9 @@ module Zuip
     private
     def reload
       raise Errno::ENOENT unless File.exists?(@source)
-      @doc = Nokogiri::XML.parse( File.new(@source) )
-      @outline = nil
-    end
-
-    def parse_outline
-      @outline = []
-      find_waypoints(@doc.css(".waypoints").first)
-    end
-
-    def find_waypoints(root, level = "#")
-      waypoints = root>("rect > title")
-      waypoints.each do |wp|
-        @outline.push wrap(wp.content, level)
-        candidate = wp.parent.next_element
-        if candidate && candidate.node_name == "g" then
-          find_waypoints candidate, level+"#"
-        end
-      end
-    end
-
-    def wrap(s, w)
-      "#{w} #{s} #{w}"
+      parse_xml(File.new(@source))
+      @outline = find_waypoints(waypoints_element)
     end
   end
+
 end
