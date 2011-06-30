@@ -18,6 +18,12 @@ describe Zuip::PresentationsController do
       raise "Failed!" unless everything_fine
     end
 
+    it "should show an error message when the file is not found" do
+      get 'show', :name => 'file_doesnt_exist'
+      flash[:alert].should contain("file_doesnt_exist")
+      response.should redirect_to(root_path)
+    end
+
     it "should provide a presentation containing an outline" do
       get 'show', :name => "presentations"
       assigns(:presentation).outline.size.should == 11
