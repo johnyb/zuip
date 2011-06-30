@@ -8,7 +8,7 @@ class Zuip::PresentationsController < ApplicationController
       @presentation = Zuip::Presentation.new(:source => path)
       render :locals => { :name => params[:name] }
     rescue Errno::ENOENT
-      flash[:alert] = t("Could not open file:")+" #{path}"
+      flash[:alert] = t("Could not open file")+": #{path}"
       redirect_to root_path
     end
   end
