@@ -3,8 +3,9 @@
 
 var map;
 function init_map(){
-  // FIXME: rails root_path needs to be taken into account here!
-  OpenLayers.ImgPath = '/images/'
+  // because we wanted to consider rails root_path, this has been moved to
+  // layouts/zuip. FIXME: move back here, once we can call rails helper methods
+  // OpenLayers.ImgPath = '/images/'
 
   controls =
   [

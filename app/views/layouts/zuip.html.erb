@@ -8,6 +8,7 @@
   <%= javascript_include_tag :defaults %>
   <%= javascript_include_tag 'OpenLayers.js' %>
   <%= csrf_meta_tag %>
+  <%= javascript_tag "OpenLayers.ImgPath = '#{root_path}images/'" %>
 </head>
 <body onload="init_map();">
 
