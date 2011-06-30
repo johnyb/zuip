@@ -11,7 +11,8 @@ Given /^the outline$/ do |table|
 end
 
 Given /^I see the content of "([^"]*)"$/ do |waypoint|
-  raise "I am getting implemented"
+  id = waypoint.downcase.delete("/").split(" ").join('_')
+  click_link "outline_link_#{id}"
 end
 
 Given /^I am viewing the presentation about presentations$/ do
