@@ -1,7 +1,5 @@
 Zuip::Application.routes.draw do
-  namespace :zuip do
-    match 'presentations/:name' => 'presentations#show'
-  end
+  match 'presentations/:name' => 'zuip/presentations#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

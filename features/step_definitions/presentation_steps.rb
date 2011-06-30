@@ -1,6 +1,6 @@
 Given /^a ZUI presentation "([^"]*)"$/ do |title|
   @presentation = Zuip::Presentation.new(:source => path_to_presentation(title))
-  visit '/zuip/presentations/presentations'
+  visit '/presentations/presentations'
 end
 
 Given /^the outline$/ do |table|
@@ -15,7 +15,7 @@ Given /^I see the content of "([^"]*)"$/ do |waypoint|
 end
 
 Given /^I am viewing the presentation about presentations$/ do
-  visit '/zuip/presentations/presentations'
+  visit '/presentations/presentations'
 end
 
 Given /^the element "([^"]*)" is hidden$/ do |id|

@@ -1,5 +1,5 @@
 Given /^the current position is at "([^"]*)"$/ do |name|
-    visit "/zuip/presentations/presentations#{params_for_waypoint(name)}"
+    visit "/presentations/presentations#{params_for_waypoint(name)}"
 end
 
 Given /^I can see an element "([^"]*)"$/ do |id|
