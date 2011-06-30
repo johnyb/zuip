@@ -28,6 +28,13 @@ describe Zuip::PresentationsController do
       get 'show', :name => "presentations"
       assigns(:presentation).outline.size.should == 11
     end
+
+    it "should find the correct path to a presentation asset under different rails root" do
+      Rails.stub!(:root) { "/does_not/exist/" }
+      get 'show', :name => "presentations"
+      flash[:alert].should =~ /\/does_not\/exist\/public\/assets\/zuip\/presentations.svg$/
+      response.should_not be_success
+    end
   end
 
 end

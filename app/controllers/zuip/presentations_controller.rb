@@ -1,9 +1,8 @@
 class Zuip::PresentationsController < ApplicationController
   layout 'zuip'
-  include Zuip::PresentationsHelper
 
   def show
-    path = File.join([Rails.root.to_s, "public", zuip_path(params[:name])])
+    path = zuip_path(params[:name])
     begin
       @presentation = Zuip::Presentation.new(:source => path)
       render :locals => { :name => params[:name] }
@@ -13,4 +12,8 @@ class Zuip::PresentationsController < ApplicationController
     end
   end
 
+  private
+  def zuip_path(name)
+    File.join([Rails.root.to_s, "public/assets/zuip", name+'.svg'])
+  end
 end
