@@ -14,4 +14,8 @@ describe Zuip::PresentationsHelper do
   it "creates correct paths to assets/zuip folder" do
     helper.zuip_path("test").should eq("/assets/zuip/test.svg")
   end
+  it "creates correct paths when root_path is set" do
+    helper.stub!(:root_path) { "/zuip/" }
+    helper.zuip_path("test").should eq("/zuip/assets/zuip/test.svg")
+  end
 end
