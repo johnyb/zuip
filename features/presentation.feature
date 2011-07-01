@@ -58,20 +58,20 @@ Feature: doing a presentation in front of an audience
   @javascript
   Scenario: Zooming in
     Given the current position is at "Title"
-    And I can see an element "title"
+    And I can see "Presentations"
     When I zoom in
     Then the elements should be larger
 
   @javascript
   Scenario: Zooming out
     Given the current position is at "Title"
-    And I can see an element "title"
+    And I can see "Presentations"
     When I zoom out
     Then the elements should be smaller
 
   @javascript
   Scenario: Panning
     Given the current position is at "Title"
-    And I can see an element "title"
+    And I can see "Presentations"
     When I pan to the left
     Then the elements should be more left

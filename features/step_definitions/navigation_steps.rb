@@ -2,8 +2,7 @@ Given /^the current position is at "([^"]*)"$/ do |name|
     visit "/presentations/presentations#{params_for_waypoint(name)}"
 end
 
-Given /^I can see an element "([^"]*)"$/ do |id|
-  page.should have_css("##{id}")
+Given /^I can see "([^"]*)"$/ do |title|
   @initial_zoom = page.evaluate_script('map.zoom')
   @initial_lon, @initial_lat = page.evaluate_script('map.center.toShortString()').split(', ')
 end
