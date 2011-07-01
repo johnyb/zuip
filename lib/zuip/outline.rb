@@ -6,13 +6,11 @@ module Zuip
     end
 
     def find_waypoints(root, level = "#", headlines = [])
-      waypoints = root>("rect > title")
+      waypoints = root>("g")
       waypoints.each do |wp|
-        headlines << wrap(wp.content, level)
-        children = wp.parent.next_element
-        if children && children.node_name == "g" then
-          find_waypoints children, level+"#", headlines
-        end
+        title = (wp > "title").first.content
+        headlines << wrap(title, level)
+        find_waypoints wp, level+"#", headlines
       end
       headlines
     end
