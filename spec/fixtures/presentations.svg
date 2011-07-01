@@ -10,7 +10,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="-50 -200 10 1200"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   viewBox="-1050 -900 2400 1800"
    zoomAndPan="magnify"
    x="0"
    y="0"
@@ -20,72 +21,13 @@
    sodipodi:docname="presentations.svg"
    width="100%"
    height="100%">
-  <title
-     id="title3105">About Zooming Presentations</title>
-  <defs
-     id="defs4">
-    <linearGradient
-       id="linearGradient3807"
-       osb:paint="solid">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop3809" />
-    </linearGradient>
-    <filter
-       inkscape:collect="always"
-       id="filter3849-2"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.296443"
-         id="feGaussianBlur3851-5" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter3849-2-6"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.296443"
-         id="feGaussianBlur3851-5-1" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter3849-2-65"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.296443"
-         id="feGaussianBlur3851-5-2" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter3849-2-6-5"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.296443"
-         id="feGaussianBlur3851-5-1-7" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter3849-2-6-9"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.296443"
-         id="feGaussianBlur3851-5-1-78" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter3849-2-6-3"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.296443"
-         id="feGaussianBlur3851-5-1-4" />
-    </filter>
+  <title>About Zooming Presentations</title>
+  <defs>
+    <g id="waypoint" style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:5;">
+      <rect x="-600" y="-450" width="1200" height="900" />
+      <line x1="-600" y1="-450" x2="600" y2="450" transform="scale(0.05)" />
+      <line x1="600" y1="-450" x2="-600" y2="450" transform="scale(0.05)" />
+    </g>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -335,172 +277,50 @@
          y="672.68274"
          id="tspan3034-7-7">Danger of motion-sickness</tspan></text>
   </g>
-  <g
-     inkscape:groupmode="layer"
-     id="waypoints"
-     inkscape:label="waypoints"
-     style="display:inline"
-     class="waypoints head1">
-    <rect
-       style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:10.35644341;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;overflow:visible;filter:url(#filter3849-2);enable-background:accumulate"
-       id="title"
-       width="1163.7948"
-       height="673.35962"
-       x="-286.74637"
-       y="-57.728931"
-       transform="matrix(0.93234946,0,0,1,-46.347769,-202.47196)"
-       inkscape:label="Title">
-      <title
-         id="title3805">Title</title>
-    </rect>
-    <g class="head2"/>
-    <rect
-       inkscape:label="Title"
-       transform="matrix(0.34821437,0,0,0.37007694,-169.5851,194.73249)"
-       y="-57.728931"
-       x="-286.74637"
-       height="673.35962"
-       width="1163.7948"
-       id="rect2311"
-       style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate">
-      <title
-         id="title4011">Slides</title>
-    </rect>
-    <g
-       inkscape:groupmode="layer"
-       id="layer4"
-       inkscape:label="Slides"
-       style="display:inline"
-       class="head2">
-      <rect
-         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate"
-         id="rect4013"
-         width="1163.7948"
-         height="673.35962"
-         x="-286.74637"
-         y="-57.728931"
-         transform="matrix(0.34821437,0,0,0.37007694,-151.78705,370.73544)"
-         inkscape:label="Title">
-        <title
-           id="title4015">Advantages</title>
-      </rect>
-      <g class="head3"/>
-      <rect
-         inkscape:label="Title"
-         transform="matrix(0.34821437,0,0,0.37007694,-135.96656,586.28961)"
-         y="-57.728931"
-         x="-286.74637"
-         height="673.35962"
-         width="1163.7948"
-         id="rect4017"
-         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate">
-        <title
-           id="title4019">Problems</title>
-      </rect>
-      <g class="head3"/>
+  <g id="waypoints" style="display:inline" class="waypoints">
+    <g class="head1">
+      <use xlink:href="#waypoint" transform="translate(200,80) scale(0.8)" />
+      <title>Title</title>
     </g>
-    <rect
-       style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate"
-       id="rect4080"
-       width="1163.7948"
-       height="673.35962"
-       x="-286.74637"
-       y="-57.728931"
-       transform="matrix(0.34821437,0,0,0.37007694,378.19935,192.75493)"
-       inkscape:label="Title">
-      <title
-         id="title4082">ZUI Presentations</title>
-    </rect>
-    <g
-       style="display:inline"
-       inkscape:label="ZUI Presentations"
-       id="g4078"
-       inkscape:groupmode="layer"
-       class="head2">
-      <rect
-         inkscape:label="Title"
-         transform="matrix(0.34821437,0,0,0.37007694,358.42374,374.69056)"
-         y="-57.728931"
-         x="-286.74637"
-         height="673.35962"
-         width="1163.7948"
-         id="rect4084"
-         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate">
-        <title
-           id="title4086">Advantages</title>
-      </rect>
-      <g class="head3"/>
-      <rect
-         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6);enable-background:accumulate"
-         id="rect4088"
-         width="1163.7948"
-         height="673.35962"
-         x="-286.74637"
-         y="-57.728931"
-         transform="matrix(0.34821437,0,0,0.37007694,374.24423,590.24473)"
-         inkscape:label="Title">
-        <title
-           id="title4090">Problems</title>
-      </rect>
-      <g class="head3"/>
+    <g class="head1">
+      <use xlink:href="#waypoint" transform="translate(-70,300) scale(0.23)" />
+      <title>Slides</title>
+      <g class="head2">
+        <use xlink:href="#waypoint" transform="translate(-70,460) scale(0.23)" />
+        <title>Advantages</title>
+      </g>
+      <g class="head2">
+        <use xlink:href="#waypoint" transform="translate(-40,690) scale(0.23)" />
+        <title>Problems</title>
+      </g>
     </g>
-    <rect
-       style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:7.82535648;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-65);enable-background:accumulate"
-       id="title-6"
-       width="1163.7948"
-       height="673.35962"
-       x="-286.74637"
-       y="-57.728931"
-       transform="matrix(1.1579106,0,0,1.4103169,-114.89993,-886.46785)"
-       inkscape:label="Title">
-      <title
-         id="title3805-5">Solutions</title>
-    </rect>
-    <g
-       inkscape:groupmode="layer"
-       id="layer5"
-       inkscape:label="Solutions"
-       style="display:inline"
-       class="head2">
-      <rect
-         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6-5);enable-background:accumulate"
-         id="rect4080-0"
-         width="1163.7948"
-         height="673.35962"
-         x="-286.74637"
-         y="-57.728931"
-         transform="matrix(0.34821437,0,0,0.37007694,-287.24999,-287.79245)"
-         inkscape:label="Title">
-        <title
-           id="title4082-8">Prezi</title>
-      </rect>
-      <g class="head3"/>
-      <rect
-         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:27.85676193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6-9);enable-background:accumulate"
-         id="rect4080-2"
-         width="1163.7948"
-         height="673.35962"
-         x="-286.74637"
-         y="-57.728931"
-         transform="matrix(0.34821437,0,0,0.37007694,149.79103,-283.83733)"
-         inkscape:label="Title">
-        <title
-           id="title4082-5">CounterPoint</title>
-      </rect>
-      <g class="head3"/>
-      <rect
-         style="opacity:0.5;color:#000000;fill:none;stroke:#004000;stroke-width:5.59535933;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3849-2-6-3);enable-background:accumulate"
-         id="rect4080-9"
-         width="1163.7948"
-         height="673.35962"
-         x="-286.74637"
-         y="-57.728931"
-         transform="matrix(1.6645487,0,0,1.9188786,-288.16542,-288.72369)"
-         inkscape:label="Title">
-        <title
-           id="title4082-0">ZUIP</title>
-      </rect>
-      <g class="head3"/>
+    <g class="head1">
+      <use xlink:href="#waypoint" transform="translate(475,290) scale(0.27)" />
+      <title>ZUI Presentations</title>
+      <g class="head2">
+        <use xlink:href="#waypoint" transform="translate(475,460) scale(0.33)" />
+        <title>Advantages</title>
+      </g>
+      <g class="head2">
+        <use xlink:href="#waypoint" transform="translate(445,690) scale(0.25)" />
+        <title>Problems</title>
+      </g>
+    </g>
+    <g class="head1">
+      <use xlink:href="#waypoint" transform="translate(250,-100) scale(0.9)" />
+      <title>Solutions</title>
+      <g class="head2">
+        <use xlink:href="#waypoint" transform="translate(-200,-150) scale(0.23)" />
+        <title>Prezi</title>
+      </g>
+      <g class="head2">
+        <use xlink:href="#waypoint" transform="translate(250,-150) scale(0.23)" />
+        <title>CounterPoint</title>
+      </g>
+      <g class="head2">
+        <use xlink:href="#waypoint" transform="translate(150,0) scale(2)" />
+        <title>ZUIP</title>
+      </g>
     </g>
   </g>
 </svg>
