@@ -7,7 +7,8 @@ describe "A Presentation" do
     p.should_not be(nil)
   end
 
-  context "with information parsed from the SVG file" do
+  context "with information parsed from the SVG file:" do
+    describe "the outline" do
     let(:outline) { ["# Title #",
                      "# Slides #",
                      "## Advantages ##",
@@ -41,6 +42,7 @@ describe "A Presentation" do
 
     it "should have an outline provided as an array" do
       p.outline.should == outline
+    end
     end
   end
 end
