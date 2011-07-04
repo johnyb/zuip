@@ -59,6 +59,10 @@ describe "A Presentation" do
         left, top, width, height = [-1050,-900,2400,1800]
         p.viewBox.should == [left, top, width, height]
       end
+
+      it "should extract extents of waypoint marker" do
+        p.waypointMarkerSize.should.== [1200,900]
+      end
     end
   end
 end

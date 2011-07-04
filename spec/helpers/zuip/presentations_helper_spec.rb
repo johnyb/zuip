@@ -21,4 +21,9 @@ describe Zuip::PresentationsHelper do
   it "generates JS to map viewBox to OpenLayers.Bounds" do
     helper.olBoundsForViewBox([-1050, -900, 2400, 1800]).should eq("new OpenLayers.Bounds(-1050, -900, 1350, 900)")
   end
+  it "creates JavaScript code that navigates map to given coordinates" do
+    @presentation = double(Zuip::Presentation, :waypointMarkerSize => [1200,900])
+    js = helper.olNavigateTo({:x => 100, :y => 200, :scale => 1})
+    js.should =~ /map\.zoomToExtent/
+  end
 end
