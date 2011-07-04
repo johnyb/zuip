@@ -10,7 +10,7 @@
   <ol id="outline" class="outlineDiv">
     <li><%=t :outline %></li>
     <% for item in outline do %>
-      <li><%= item %></li>
+      <li><%= link_to_function item, olPanTo(item) %></li>
     <% end %>
   </ol>
   <div style="background-color: transparent;">
