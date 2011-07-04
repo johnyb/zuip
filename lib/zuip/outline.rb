@@ -9,7 +9,7 @@ module Zuip
       waypoints = root>("g")
       waypoints.each do |wp|
         title = (wp > "title").first.content
-        headlines << wrap(title, level)
+        headlines << {:name => wrap(title, level)}
         find_waypoints wp, level+"#", headlines
       end
       headlines

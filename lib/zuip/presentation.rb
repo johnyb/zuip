@@ -26,7 +26,7 @@ module Zuip
 
     def outline
       reload if @outline.nil?
-      @outline.to_a
+      @outline
     end
 
     def source=(s)
