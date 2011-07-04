@@ -6,7 +6,7 @@ describe "zuip/presentations/show.html.erb" do
     assign(:presentation, @p)
     view.stub(:name) { "test_name" }
     view.stub(:olBoundsForViewBox) { |box| "new OpenLayers.Bounds(#{box[0]},#{box[1]},#{box[2]},#{box[3]})"}
-    view.stub(:olPanTo) { |item| "map.moveTo(#{item})" }
+    view.stub(:olNavigateTo) { |item| "map.moveTo(#{item})" }
   end
 
   it "should render with presentation" do
@@ -53,8 +53,8 @@ describe "zuip/presentations/show.html.erb" do
 
     it "should render links that call the pan methods of the map" do
       render
-      @p.outline.each do |name|
-        rendered.should have_selector("ol#outline a", :onclick => "map.moveTo(#{name})")
+      @p.outline.each do |item|
+        rendered.should have_selector("ol#outline a", :onclick => "map.moveTo(#{item})")
       end
     end
   end
