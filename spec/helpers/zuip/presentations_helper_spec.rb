@@ -18,4 +18,7 @@ describe Zuip::PresentationsHelper do
     helper.stub!(:root_path) { "/zuip/" }
     helper.zuip_path("test").should eq("/zuip/assets/zuip/test.svg")
   end
+  it "generates JS to map viewBox to OpenLayers.Bounds" do
+    helper.olBoundsForViewBox([-1050, -900, 2400, 1800]).should eq("new OpenLayers.Bounds(-1050, -900, 1350, 900)")
+  end
 end
