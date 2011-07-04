@@ -31,5 +31,5 @@ end
 Then /^the elements? should be more left$/ do
   lon,lat = page.evaluate_script('map.getCenter().toShortString()').split(', ')
   lon.should < @initial_lon
-  lat.should == @initial_lat
+  (lat.to_f - @initial_lat.to_f).abs.should < 0.01
 end
