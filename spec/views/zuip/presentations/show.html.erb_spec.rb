@@ -2,9 +2,10 @@ require 'spec_helper'
 
 describe "zuip/presentations/show.html.erb" do
   before(:each) do
-    @p = double(Zuip::Presentation, :title => "Test title", :outline => [])
+    @p = double(Zuip::Presentation, :title => "Test title", :outline => [], :viewBox => [0, 0, 1200, 900])
     assign(:presentation, @p)
     view.stub(:name) { "test_name" }
+    view.stub(:olBoundsForViewBox) { |box| "new OpenLayers.Bounds(#{box[0]},#{box[1]},#{box[2]},#{box[3]})"}
   end
 
   it "should render with presentation" do
@@ -16,6 +17,11 @@ describe "zuip/presentations/show.html.erb" do
   it "should render a javascript function \"loadBaseLayer\"" do
     render
     rendered.should contain("function loadBaseLayer(")
+  end
+
+  it "should render a bounding box from presentations attributes" do
+    render
+    rendered.should contain("new OpenLayers.Bounds(0,0,1200,900)")
   end
 
   describe "renders an outline panel which" do
