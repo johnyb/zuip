@@ -35,20 +35,20 @@ describe "zuip/presentations/show.html.erb" do
     end
 
     it "should contain an outline" do
-      @p.stub(:outline) { ["# Title #",
-                          "# Slides #",
-                          "## Advantages ##",
-                          "## Problems ##",
-                          "# ZUI Presentations #",
-                          "## Advantages ##",
-                          "## Problems ##",
-                          "# Solutions #",
-                          "## Prezi ##",
-                          "## CounterPoint ##",
-                          "## ZUIP ##"]
+      @p.stub(:outline) { [{:name => "# Title #"},
+                           {:name => "# Slides #"},
+                           {:name => "## Advantages ##"},
+                           {:name => "## Problems ##"},
+                           {:name => "# ZUI Presentations #"},
+                           {:name => "## Advantages ##"},
+                           {:name => "## Problems ##"},
+                           {:name => "# Solutions #"},
+                           {:name => "## Prezi ##"},
+                           {:name => "## CounterPoint ##"},
+                           {:name => "## ZUIP ##"}]
             }
       render
-      @p.outline.each { |name| rendered.should have_selector("ol#outline > li", :content => name ) }
+      @p.outline.each { |item| rendered.should have_selector("ol#outline > li", :content => item[:name] ) }
     end
 
     it "should render links that call the pan methods of the map" do

@@ -7,7 +7,7 @@ Given /^the outline$/ do |table|
   # table is a Cucumber::Ast::Table
   outline = table.hashes.map{ |h| h[:name] }
   @presentation.outline.size.should == outline.size
-  @presentation.outline.should == outline
+  @presentation.outline.map{ |item| item[:name] }.should == outline
 end
 
 Given /^I see the content of "([^"]*)"$/ do |waypoint|

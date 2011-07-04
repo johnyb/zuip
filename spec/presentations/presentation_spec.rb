@@ -40,8 +40,8 @@ describe "A Presentation" do
         end
       end
 
-      it "should have an outline provided as an array" do
-        p.outline.should == outline
+      it "should have an outline provided as an hash with names" do
+        p.outline.map{ |item| item[:name] }.should == outline
       end
     end
 
