@@ -24,6 +24,11 @@ module Zuip
       value.split(" ").map{ |v| v.to_f }
     end
 
+    def waypointMarkerSize
+      rect = @doc.css("defs > g#waypoint > rect").first
+      [rect.attribute("width").value.to_f,rect.attribute("height").value.to_f]
+    end
+
     def outline
       reload if @outline.nil?
       @outline
