@@ -18,6 +18,12 @@ module Zuip
       dc_titles.first.content
     end
 
+    def viewBox
+      svg_elem = @doc.css('svg').first
+      value = svg_elem.attribute('viewBox').value
+      value.split(" ").map{ |v| v.to_f }
+    end
+
     def outline
       reload if @outline.nil?
       @outline.to_a
