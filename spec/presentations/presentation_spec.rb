@@ -44,5 +44,12 @@ describe "A Presentation" do
         p.outline.should == outline
       end
     end
+
+    describe "bounding box" do
+      it "should extract the view box" do
+        left, top, width, height = [-1050,-900,2400,1800]
+        p.viewBox.should == [left, top, width, height]
+      end
+    end
   end
 end
