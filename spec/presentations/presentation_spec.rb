@@ -43,6 +43,15 @@ describe "A Presentation" do
       it "should have an outline provided as an hash with names" do
         p.outline.map{ |item| item[:name] }.should == outline
       end
+
+      it "should have an outline with information about the bounding box of each item" do
+        expected = [[200,80,0.8],[-70,300,0.23],[-70,460,0.23],[-40,690,0.23],[475.0, 290.0, 0.27],
+                    [475,460,0.33],[445,690,0.25],[250,-100,0.9],[-200,-150,0.23],[250,-150,0.23],
+                    [150,0,2]]
+        expected.each { |i| i.map!{ |j| j.to_f } }
+        res = p.outline.map{ |item| [item[:x],item[:y],item[:scale]] }
+        res.should == expected
+      end
     end
 
     describe "bounding box" do
