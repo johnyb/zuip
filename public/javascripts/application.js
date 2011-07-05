@@ -30,3 +30,17 @@ function init_map(){
     map.zoomToMaxExtent();
   }
 }
+
+function lastWaypointLink() {
+  current_waypoint = $('ol#outline a.current');
+  if (!current_waypoint) return;
+
+  return current_waypoint.parent('li').prev('li').find('a');
+}
+
+function nextWaypointLink() {
+  current_waypoint = $('ol#outline a.current');
+  if (!current_waypoint) return;
+
+  return current_waypoint.parent('li').next('li').find('a');
+}
