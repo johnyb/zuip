@@ -17,4 +17,9 @@ module Zuip::PresentationsHelper
     viewBox = [pos[:x]-width/2,pos[:y]-height/2,width,height]
     "map.zoomToExtent(#{olBoundsForViewBox(viewBox)})"
   end
+
+  def idForOutlineLink(item)
+    id = item[:path].downcase.delete("/").split(" ").join('__')
+    "outline_link_#{id}"
+  end
 end
