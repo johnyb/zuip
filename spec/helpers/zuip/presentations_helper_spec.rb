@@ -26,4 +26,9 @@ describe Zuip::PresentationsHelper do
     js = helper.olNavigateTo({:x => 100, :y => 200, :scale => 1})
     js.should =~ /map\.zoomToExtent/
   end
+
+  it "creates ids for outline links" do
+    helper.idForOutlineLink({:path => "Title"}).should == "outline_link_title"
+    helper.idForOutlineLink({:path => "Slides / Problems"}).should == "outline_link_slides__problems"
+  end
 end
