@@ -48,7 +48,9 @@ module NavigationHelpers
   def params_for_waypoint(name)
     case name
     when /^Title$/
-      '?zoom=7.863888888888889&lat=18849.26478&lon=21906.20852&layers=B'
+      '?zoom=4.030769230769231&lat=-80&lon=200&layers=B'
+    when /^Slides \/ Problems$/
+      '?zoom=5.867692307692308&lat=-690&lon=-40&layers=B'
     else
       raise "Can't find mapping from \"#{name}\" to a waypoint.\n" +
           "Now, go and add a mapping in #{__FILE__}"

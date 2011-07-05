@@ -44,3 +44,14 @@ When /^I click the waypoint "([^"]*)"$/ do |waypoint|
   id = waypoint.downcase.delete("/").split(" ").join('__')
   click_link "outline_link_#{id}"
 end
+
+When /^I go "([^"]*)"$/ do |direction|
+  case direction
+  when /back/
+    page.execute_script('lastWaypointLink().click();')
+  when /forward/
+    page.execute_script('nextWaypointLink().click();')
+  else
+    raise "Direction #{direction} not found."
+  end
+end
