@@ -25,12 +25,12 @@ Feature: doing a presentation in front of an audience
     When I follow "Show Outline"
     Then the element "outline" is visible
 
-  @it2 @wip
+  @it2 @wip @javascript
   Scenario: Navigating to arbitrary waypoint on the landscape
     Given the current position is at "Title"
     And I see the content of "Title"
     When I open the outline
-    And I follow "Slides / Problems"
+    And I click the waypoint "Slides / Problems"
     Then I should see the content of "Slides / Problems"
 
   @it2 @tbd

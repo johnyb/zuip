@@ -11,8 +11,11 @@ Given /^the outline$/ do |table|
 end
 
 Given /^I see the content of "([^"]*)"$/ do |waypoint|
-  id = waypoint.downcase.delete("/").split(" ").join('_')
-  click_link "outline_link_#{id}"
+  click_link 'show_outline'
+
+  When "I click the waypoint \"#{waypoint}\""
+
+  click_link 'hide_outline'
 end
 
 Given /^I am viewing the presentation about presentations$/ do
@@ -32,5 +35,12 @@ Then /^the element "([^"]*)" is visible$/ do |id|
 end
 
 Then /^I should see the content of "([^"]*)"$/ do |waypoint|
-  pending # express the regexp above with the code you wish you had
+  id = waypoint.downcase.delete("/").split(" ").join('__')
+  id = "outline_link_#{id}"
+  find("##{id}")[:class].should =~ /current/
+end
+
+When /^I click the waypoint "([^"]*)"$/ do |waypoint|
+  id = waypoint.downcase.delete("/").split(" ").join('__')
+  click_link "outline_link_#{id}"
 end
