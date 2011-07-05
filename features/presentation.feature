@@ -33,14 +33,14 @@ Feature: doing a presentation in front of an audience
     And I click the waypoint "Slides / Problems"
     Then I should see the content of "Slides / Problems"
 
-  @it2 @wip @javascript
+  @it2 @javascript
   Scenario: Navigating forwards within the list of waypoints on landscape
     Given the current position is at "Slides / Problems"
     And I see the content of "Slides / Problems"
     When I go "forward"
     Then I should see the content of "ZUI Presentations"
 
-  @it2 @wip @javascript
+  @it2 @javascript
   Scenario: Navigating backwards within the list of waypoints on landscape
     Given the current position is at "Slides / Problems"
     And I see the content of "Slides / Problems"
