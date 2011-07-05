@@ -52,6 +52,13 @@ describe "A Presentation" do
         res = p.outline.map{ |item| [item[:x],item[:y],item[:scale]] }
         res.should == expected
       end
+
+      it "should have information about the parents of each item" do
+        expected = ["Title","Slides","Slides / Advantages","Slides / Problems","ZUI Presentations",
+                    "ZUI Presentations / Advantages","ZUI Presentations / Problems","Solutions",
+                    "Solutions / Prezi","Solutions / CounterPoint","Solutions / ZUIP"]
+        p.outline.map{ |item| item[:path] }.should == expected
+      end
     end
 
     describe "bounding box" do
