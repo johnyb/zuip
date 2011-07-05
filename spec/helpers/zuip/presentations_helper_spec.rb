@@ -23,7 +23,7 @@ describe Zuip::PresentationsHelper do
   end
   it "creates JavaScript code that navigates map to given coordinates" do
     @presentation = double(Zuip::Presentation, :waypointMarkerSize => [1200,900])
-    js = helper.olNavigateTo({:x => 100, :y => 200, :scale => 1})
+    js = helper.olNavigateTo({:x => 100, :y => 200, :scale => 1, :path => "Title"})
     js.should =~ /map\.zoomToExtent/
   end
 
