@@ -34,6 +34,9 @@ html, body, #map {
 .outlineDiv a {
   color : #ffffff;
 }
+.outlineDiv a.current {
+  font-weight : bolder;
+}
 
 a.maximizeDiv {
   float : right;
