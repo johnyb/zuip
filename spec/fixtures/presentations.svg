@@ -28,6 +28,12 @@
       <line x1="-600" y1="-450" x2="600" y2="450" transform="scale(0.05)" />
       <line x1="600" y1="-450" x2="-600" y2="450" transform="scale(0.05)" />
     </g>
+    <style type="text/css">
+      <![CDATA[
+      text {
+        font-family : helvetica;
+      }
+    ]]></style>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -81,17 +87,7 @@
       </cc:License>
     </rdf:RDF>
   </metadata>
-  <flowRoot
-     xml:space="preserve"
-     id="flowRoot3061"
-     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"><flowRegion
-       id="flowRegion3063"><rect
-         id="rect3065"
-         width="525.71429"
-         height="765.71429"
-         x="-1054.2858"
-         y="6.6478968" /></flowRegion><flowPara
-       id="flowPara3067" /></flowRoot>  <g
+  <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Presentation"
@@ -126,18 +122,22 @@
        style="opacity:0.1;fill:#ff0000" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="321.66544"
-       y="319.36243"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;"
+       x="481.66544"
+       y="289.95819"
        id="text2985"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2987"
-         x="321.66544"
-         y="319.36243">ZUI Presentations</tspan></text>
+         x="481.66544"
+         y="289.95819">ZUI</tspan><tspan
+         sodipodi:role="line"
+         id="tspan2986"
+         x="481.66544"
+         y="339.95819">Presentations</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:154.12817383px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-size:154.12817383px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
        x="-275.9472"
        y="123.9341"
        id="text2989"
@@ -148,7 +148,7 @@
          y="123.9341">Presentations</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;"
        x="-73.775215"
        y="289.95819"
        id="text2993"
@@ -163,7 +163,7 @@
          id="tspan2997">Presentations</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
        x="-541.88904"
        y="455.67255"
        id="text3053"
@@ -174,7 +174,7 @@
          y="455.67255">advantages</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
        x="-521.88904"
        y="675.67249"
        id="text3057"
@@ -185,7 +185,7 @@
          y="675.67249">Problems</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
        x="-250.46046"
        y="-130.04175"
        id="text3069"
@@ -196,7 +196,7 @@
          y="-130.04175">Prezi</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
        x="132.39667"
        y="-141.47031"
        id="text3073"
@@ -207,7 +207,7 @@
          y="-141.47031">CounterPoint</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
        x="664.27887"
        y="-141.47032"
        id="text3077"
@@ -218,7 +218,7 @@
          y="-141.47032">ZUIP</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
        x="-153.453"
        y="435.78156"
        id="text3018"
@@ -237,7 +237,7 @@
          id="tspan3034">Simplicity / linearity</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
        x="-171.63176"
        y="676.85803"
        id="text3050"
@@ -248,7 +248,7 @@
          id="tspan3056">Jumping between slides</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
        x="287.87805"
        y="434.94019"
        id="text3018-6"
@@ -267,7 +267,7 @@
          id="tspan3034-7">Better orientation for the audience</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
        x="303.62607"
        y="672.68274"
        id="text3018-6-6"
