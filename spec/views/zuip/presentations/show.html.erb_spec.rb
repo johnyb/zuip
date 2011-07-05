@@ -7,6 +7,7 @@ describe "zuip/presentations/show.html.erb" do
     view.stub(:name) { "test_name" }
     view.stub(:olBoundsForViewBox) { |box| "new OpenLayers.Bounds(#{box[0]},#{box[1]},#{box[2]},#{box[3]})"}
     view.stub(:olNavigateTo) { |item| "map.moveTo(#{item[:name]})" }
+    view.stub(:idForOutlineLink) { |item| "id_for_#{item[:name]}" }
   end
 
   it "should render with presentation" do
@@ -52,6 +53,13 @@ describe "zuip/presentations/show.html.erb" do
       render
       @p.outline.each do |item|
         rendered.should have_selector("ol#outline a", :onclick => "map.moveTo(#{item[:name]}); return false;")
+      end
+    end
+
+    it "should render links that have an id" do
+      render
+      @p.outline.each do |item|
+        rendered.should have_selector("ol#outline a", :id => "id_for_#{item[:name]}")
       end
     end
   end
