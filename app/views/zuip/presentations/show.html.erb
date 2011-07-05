@@ -3,7 +3,7 @@
 </div>
 <script language="javascript">
   function loadBaseLayer() {
-    zuip = new OpenLayers.Layer.ScalableInlineXhtml( '<%= @presentation.title %>', '<%= zuip_path(name) %>', <%= olBoundsForViewBox(@presentation.viewBox) %>, new OpenLayers.Size(80,60),{isBaseLayer: true, numZoomLevels: 14} );
+    zuip = new OpenLayers.Layer.ScalableInlineXhtml( '<%= @presentation.title %>', '<%= zuip_path(name) %>', <%= olBoundsForViewBox(@presentation.viewBox) %>, new OpenLayers.Size(160,120),{isBaseLayer: true, numZoomLevels: 14} );
     map.addLayers([zuip]);
   }
 </script>
