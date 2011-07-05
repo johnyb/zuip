@@ -6,7 +6,7 @@ describe "zuip/presentations/show.html.erb" do
     assign(:presentation, @p)
     view.stub(:name) { "test_name" }
     view.stub(:olBoundsForViewBox) { |box| "new OpenLayers.Bounds(#{box[0]},#{box[1]},#{box[2]},#{box[3]})"}
-    view.stub(:olNavigateTo) { |item| "map.moveTo(#{item})" }
+    view.stub(:olNavigateTo) { |item| "map.moveTo(#{item[:name]})" }
   end
 
   it "should render with presentation" do
@@ -26,6 +26,15 @@ describe "zuip/presentations/show.html.erb" do
   end
 
   describe "renders an outline panel which" do
+    before(:each) do
+      @p.stub(:outline) { [{:name => "# Title #"},
+                           {:name => "# Slides #"},
+                           {:name => "## Advantages ##"},
+                           {:name => "## Problems ##"},
+                           {:name => "# ZUI Presentations #"},
+                           {:name => "## Advantages ##"}] }
+    end
+
     it "should be hideable by the user" do
       render
       rendered.should have_selector("div", :id => "outline_panel")
@@ -35,18 +44,6 @@ describe "zuip/presentations/show.html.erb" do
     end
 
     it "should contain an outline" do
-      @p.stub(:outline) { [{:name => "# Title #"},
-                           {:name => "# Slides #"},
-                           {:name => "## Advantages ##"},
-                           {:name => "## Problems ##"},
-                           {:name => "# ZUI Presentations #"},
-                           {:name => "## Advantages ##"},
-                           {:name => "## Problems ##"},
-                           {:name => "# Solutions #"},
-                           {:name => "## Prezi ##"},
-                           {:name => "## CounterPoint ##"},
-                           {:name => "## ZUIP ##"}]
-            }
       render
       @p.outline.each { |item| rendered.should have_selector("ol#outline > li", :content => item[:name] ) }
     end
@@ -54,7 +51,7 @@ describe "zuip/presentations/show.html.erb" do
     it "should render links that call the pan methods of the map" do
       render
       @p.outline.each do |item|
-        rendered.should have_selector("ol#outline a", :onclick => "map.moveTo(#{item})")
+        rendered.should have_selector("ol#outline a", :onclick => "map.moveTo(#{item[:name]}); return false;")
       end
     end
   end
