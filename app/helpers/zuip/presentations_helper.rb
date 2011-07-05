@@ -15,7 +15,11 @@ module Zuip::PresentationsHelper
     width *= pos[:scale]
     height *= pos[:scale]
     viewBox = [pos[:x]-width/2,pos[:y]-height/2,width,height]
-    "map.zoomToExtent(#{olBoundsForViewBox(viewBox)})"
+    "
+    map.zoomToExtent(#{olBoundsForViewBox(viewBox)});
+    $('ol#outline a.current').removeClass('current');
+    $('##{idForOutlineLink(pos)}').addClass('current')
+    "
   end
 
   def idForOutlineLink(item)
