@@ -29,6 +29,10 @@ module Zuip
       [rect.attribute("width").value.to_f,rect.attribute("height").value.to_f]
     end
 
+    def fileName
+      File.basename(@source)
+    end
+
     def outline
       reload if @outline.nil?
       @outline

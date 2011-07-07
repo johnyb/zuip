@@ -1,5 +1,10 @@
 Zuip::Application.routes.draw do
-  match 'presentations/:name' => 'zuip/presentations#show'
+  resource 'presentations', :controller => 'zuip/presentations' do
+    collection do
+      get 'index'
+    end
+  end
+  match 'presentations/:name' => 'zuip/presentations#show', :as => :named_presentations
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -51,7 +56,7 @@ Zuip::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
-  root :to => "application#index"
+  root :to => "zuip/presentations#index"
 
   # See how all your routes lay out with "rake routes"
 

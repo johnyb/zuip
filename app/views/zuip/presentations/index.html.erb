@@ -1,0 +1,7 @@
+<div>
+  <ol id="presentations">
+    <% @presentations.each do |p| %>
+      <li><%= link_to p.title, named_presentations_path(p.fileName[0..-5]) %></li>
+    <% end %>
+  </ol>
+</div>

@@ -7,6 +7,10 @@ describe "A Presentation" do
     p.should_not be(nil)
   end
 
+  it "provides a file name" do
+    p.fileName.should == "presentations.svg"
+  end
+
   context "with information parsed from the SVG file:" do
     it "should have a title" do
       p.title.should == "About Zooming Presentations"
