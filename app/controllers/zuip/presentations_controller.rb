@@ -1,5 +1,6 @@
 class Zuip::PresentationsController < ApplicationController
-  layout 'zuip'
+  layout 'zuip', :only => [:show]
+  layout 'application', :except => [:show]
 
   def index
     @presentations = Dir.glob(zuip_path('*'))
@@ -14,12 +15,13 @@ class Zuip::PresentationsController < ApplicationController
       render :locals => { :name => params[:name] }
     rescue Errno::ENOENT
       flash[:alert] = t("Could not open file")+": #{path}"
-      redirect_to root_path
+      redirect_to presentations_path
     end
   end
 
   private
   def zuip_path(name)
+    name = "" if name.nil?
     File.join([Rails.root.to_s, "public/assets/zuip", name+'.svg'])
   end
 end

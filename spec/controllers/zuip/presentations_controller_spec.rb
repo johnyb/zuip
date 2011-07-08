@@ -9,19 +9,15 @@ describe Zuip::PresentationsController do
       response.should render_template("zuip/presentations/show")
     end
 
-    it "should not be successful without parameter \"name\"" do
-      begin
-        get 'show'
-      rescue ActionController::RoutingError
-        everything_fine = true
-      end
-      raise "Failed!" unless everything_fine
+    it "should redirect to to index without parameter \"name\"" do
+      get 'show'
+      response.should redirect_to(presentations_path)
     end
 
     it "should show an error message when the file is not found" do
       get 'show', :name => 'file_doesnt_exist'
       flash[:alert].should contain("file_doesnt_exist")
-      response.should redirect_to(root_path)
+      response.should redirect_to(presentations_path)
     end
 
     it "should provide a presentation containing an outline" do
