@@ -8,6 +8,10 @@ class Zuip::PresentationsController < ApplicationController
     @presentations = @presentations.select{ |p| not p.nil? }
   end
 
+  def new
+    @presentation = Zuip::Presentation.new
+  end
+
   def show
     path = zuip_path(params[:name])
     begin

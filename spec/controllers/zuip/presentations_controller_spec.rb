@@ -33,4 +33,17 @@ describe Zuip::PresentationsController do
     end
   end
 
+  describe "GET 'new'" do
+    it "should be successful" do
+      get 'new'
+      response.should be_success
+      response.should render_template("zuip/presentations/new")
+    end
+
+    it "should create an empty presentation" do
+      get 'new'
+      assigns(:presentation).should_not be_nil
+    end
+  end
+
 end
