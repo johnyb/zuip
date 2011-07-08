@@ -7,6 +7,7 @@ describe Zuip::PresentationsController do
       get 'show', :name => "presentations"
       response.should be_success
       response.should render_template("zuip/presentations/show")
+      response.should render_template("layouts/zuip")
     end
 
     it "should redirect to to index without parameter \"name\"" do
@@ -38,6 +39,7 @@ describe Zuip::PresentationsController do
       get 'new'
       response.should be_success
       response.should render_template("zuip/presentations/new")
+      response.should render_template("layouts/application")
     end
 
     it "should create an empty presentation" do

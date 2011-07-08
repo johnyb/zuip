@@ -1,5 +1,4 @@
 class Zuip::PresentationsController < ApplicationController
-  layout 'zuip', :only => [:show]
   layout 'application', :except => [:show]
 
   def index
@@ -16,7 +15,7 @@ class Zuip::PresentationsController < ApplicationController
     path = zuip_path(params[:name])
     begin
       @presentation = Zuip::Presentation.new(:source => path)
-      render :locals => { :name => params[:name] }
+      render :locals => { :name => params[:name] }, :layout => "zuip"
     rescue Errno::ENOENT
       flash[:alert] = t("Could not open file")+": #{path}"
       redirect_to presentations_path
