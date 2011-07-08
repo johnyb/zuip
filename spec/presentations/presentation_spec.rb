@@ -2,10 +2,21 @@ require 'spec_helper'
 
 describe "A Presentation" do
 
-  it "can be instantiated from scratch" do
-    p = Zuip::Presentation.new
-    p.should_not be_nil
-    p.title.should be_empty
+  context "instantiated from scratch" do
+    let(:p){ Zuip::Presentation.new }
+
+    it "should be instantiated" do
+      p.should_not be_nil
+    end
+
+    it "should have an empty title" do
+      p.title.should be_empty
+    end
+
+    it "should have a bounding box" do
+      left, top, width, height = [-1050,-900,2400,1800]
+      p.viewBox.should == [left, top, width, height]
+    end
   end
 
   context "with information parsed from the SVG file:" do

@@ -56,7 +56,20 @@ module Zuip
 
     def initial_svg
       '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-      <svg xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <svg xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-1050 -900 2400 1800">
+      <defs>
+      <g id="waypoint" style="opacity:0.001;color:#000000;fill:none;stroke:#004000;stroke-width:5;">
+      <rect x="-600" y="-450" width="1200" height="900" />
+      <line x1="-600" y1="-450" x2="600" y2="450" transform="scale(0.05)" />
+      <line x1="600" y1="-450" x2="-600" y2="450" transform="scale(0.05)" />
+      </g>
+      <style type="text/css">
+      <![CDATA[
+        text {
+          font-family : helvetica;
+        }
+      ]]></style>
+      </defs>
       <metadata><rdf:RDF>
       <dc:title></dc:title>
       </rdf:RDF></metadata>
