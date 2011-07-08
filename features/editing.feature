@@ -19,7 +19,7 @@ Feature: Editing presentations
     Then the landscape contains no groups
     But the landscape contains 3 objects
 
-  @tbd @it3
+  @wip @it3 @javascript
   Scenario: Group objects
     Given a landscape containing the objects
       | name    |
@@ -45,7 +45,7 @@ Feature: Editing presentations
     And I press the "del" key
     Then the landscape contains no objects
 
-  @tbd @it3
+  @wip @it3
   Scenario: Add assets
     Given a landscape
     When I add an asset of "Image" type named "car.png"
