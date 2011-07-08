@@ -1,17 +1,20 @@
 require 'spec_helper'
 
 describe "A Presentation" do
-  let(:p) { Zuip::Presentation.new(:source => "#{RSpec.configuration.fixture_path}/presentations.svg") }
 
-  it "can be instantiated" do
-    p.should_not be(nil)
-  end
-
-  it "provides a file name" do
-    p.fileName.should == "presentations.svg"
+  it "can be instantiated from scratch" do
+    p = Zuip::Presentation.new
+    p.should_not be_nil
+    p.title.should be_empty
   end
 
   context "with information parsed from the SVG file:" do
+    let(:p) { Zuip::Presentation.new(:source => "#{RSpec.configuration.fixture_path}/presentations.svg") }
+
+    it "provides a file name" do
+      p.fileName.should == "presentations.svg"
+    end
+
     it "should have a title" do
       p.title.should == "About Zooming Presentations"
     end
