@@ -4,6 +4,7 @@
   <title><%= yield :title || "ZUI Presentations" %></title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
+  <%= yield :header %>
   <%= csrf_meta_tag %>
 </head>
 <body>
