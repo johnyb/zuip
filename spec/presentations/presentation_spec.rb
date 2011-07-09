@@ -14,8 +14,15 @@ describe "A Presentation" do
     end
 
     it "should have a bounding box" do
-      left, top, width, height = [-1050,-900,2400,1800]
+      left, top, width, height = [0,0,2400,1800]
       p.viewBox.should == [left, top, width, height]
+    end
+
+    it "should provide svg-code visualizing the presentation" do
+      doc = Nokogiri::XML.parse(p.to_svg)
+      doc.css("svg").should_not be_blank
+      doc.css("svg g#waypoints").should_not be_blank
+      doc.errors.should be_empty
     end
   end
 

@@ -47,6 +47,10 @@ module Zuip
       reload
     end
 
+    def to_svg
+      @doc.to_s
+    end
+
     private
     def reload
       raise Errno::ENOENT unless File.exists?(@source)
@@ -56,7 +60,7 @@ module Zuip
 
     def initial_svg
       '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-      <svg xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-1050 -900 2400 1800">
+      <svg xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 2400 1800">
       <defs>
       <g id="waypoint" style="opacity:0.001;color:#000000;fill:none;stroke:#004000;stroke-width:5;">
       <rect x="-600" y="-450" width="1200" height="900" />
@@ -73,8 +77,8 @@ module Zuip
       <metadata><rdf:RDF>
       <dc:title></dc:title>
       </rdf:RDF></metadata>
-      <g id="waypoints" class="waypoints">
-      </g>
+      <g id="content" />
+      <g id="waypoints" class="waypoints" />
       </svg>
       '
     end
