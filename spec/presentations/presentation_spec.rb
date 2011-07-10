@@ -102,6 +102,14 @@ describe "A Presentation" do
     describe "handles the content within the svg file" do
       let(:p){ Zuip::Presentation.new }
 
+      it "should store the content in an svg file" do
+        p.fileName.should be_nil
+        f = File.join(Rails.root,"tmp","spec","presentations.svg")
+        File.delete(f) if File.exists?(f)
+        p.file = f
+        p.fileName.should == "presentations.svg"
+      end
+
       it "should update the content with a given string" do
         p.content.should be_empty
         example = '<g class="content"><rect x="10" y="10" width="100" height="100"></rect></g>'

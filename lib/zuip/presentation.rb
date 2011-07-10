@@ -33,7 +33,16 @@ module Zuip
       [rect.attribute("width").value.to_f,rect.attribute("height").value.to_f]
     end
 
+    def file=(name)
+      raise Errno::EEXIST if File.exists?(name)
+
+      @source = name
+      Dir.mkdir(File.dirname(@source)) unless File.exists?(File.dirname(@source))
+      @doc.write_xml_to(File.new(@source,"w+"))
+    end
     def fileName
+      return nil if @source.nil?
+
       File.basename(@source)
     end
 
