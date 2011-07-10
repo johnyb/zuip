@@ -21,6 +21,8 @@ describe "A Presentation" do
     it "should provide svg-code visualizing the presentation" do
       doc = Nokogiri::XML.parse(p.to_svg)
       doc.css("svg").should_not be_blank
+      doc.css("svg defs g#waypoint").should_not be_blank
+      doc.css("svg g#content").should_not be_blank
       doc.css("svg g#waypoints").should_not be_blank
       doc.errors.should be_empty
     end
