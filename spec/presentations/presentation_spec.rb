@@ -98,5 +98,17 @@ describe "A Presentation" do
         p.waypointMarkerSize.should.== [1200,900]
       end
     end
+
+    describe "handles the content within the svg file" do
+      let(:p){ Zuip::Presentation.new }
+
+      it "should update the content with a given string" do
+        p.content.should be_empty
+        example = '<g class="content"><rect x="10" y="10" width="100" height="100"></rect></g>'
+        p.content=example
+        p.content.should == example
+        p.to_svg.should =~ /rect x="10" y="10" width="100" height="100"/
+      end
+    end
   end
 end

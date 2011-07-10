@@ -51,6 +51,15 @@ module Zuip
       @doc.to_s
     end
 
+    def content
+      content_element.inner_html.to_s
+    end
+
+    def content=(str)
+      f = Nokogiri::XML::DocumentFragment.parse(str)
+      content_element.inner_html = f
+    end
+
     private
     def reload
       raise Errno::ENOENT unless File.exists?(@source)
