@@ -15,4 +15,5 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'selenium-webdriver', '>= 0.2.2'
+  gem 'rcov'
 end
