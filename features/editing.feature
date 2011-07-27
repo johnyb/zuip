@@ -61,3 +61,13 @@ Feature: Editing presentations
     When I move "car" to "(100,100)"
     Then the object "car" is rendered at "(100,100)"
 
+  @it3
+  Scenario: Create a New Presentation
+    Given I am on the presentation index page
+    And a presentation "semantic_desktop" does not exist
+    When I follow "New ZUI-Presentation"
+    And I fill in "Title" with "Semantic Desktop - recent progress"
+    And I fill in "Filename" with "semantic_desktop"
+    And I press "create"
+    Then I should be on the presentations edit page for "semantic_desktop"
+    And there should be a presentation "semantic_desktop"

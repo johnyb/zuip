@@ -31,3 +31,13 @@ end
 Then /^the landscape contains (\d+) objects$/ do |arg1|
   pending # express the regexp above with the code you wish you had
 end
+
+Then /^there should be a presentation "([^"]*)"$/ do |name|
+  f = path_to_presentation(name)
+  File.should exist(f)
+end
+
+Given /^a presentation "([^"]*)" does not exist$/ do |name|
+  f = path_to_presentation(name)
+  File.delete(f) if File.exist?(f)
+end
