@@ -4,4 +4,5 @@
       <li><%= link_to p.title, named_presentations_path(p.fileName[0..-5]) %></li>
     <% end %>
   </ol>
+  <%= link_to t("New ZUI-Presentation"), new_presentations_path %>
 </div>
