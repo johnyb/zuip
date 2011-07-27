@@ -1,1 +1,8 @@
-<div id="svgcanvas"><%= @presentation.to_svg.html_safe %></div>
+<% content_for :title, t("Create new presentation") %>
+<%= form_for :presentation, :url => { :action => 'create' }, :html => {} do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :fileName %>
+  <%= f.text_field :fileName %>
+  <%= f.submit :create %>
+<% end %>
