@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= yield :title || "ZUI Presentations" %></title>
+  <title>ZUIP - <%= yield :title || "ZUI Presentations" %></title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= yield :header %>
@@ -10,6 +10,9 @@
 <body>
 <% if flash[:alert] %>
   <div id="alert" class="flash"><%= flash[:alert] %></div>
+<% end %>
+<% if flash[:error] %>
+  <div id="error" class="flash"><%= flash[:error] %></div>
 <% end %>
 <%= yield %>
 
