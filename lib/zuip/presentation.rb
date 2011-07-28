@@ -22,6 +22,12 @@ module Zuip
       dc_titles.first.content
     end
 
+    def title=(t)
+      dc_titles = @doc.css('dc|title')
+      raise ParsingError unless dc_titles.count == 1
+      dc_titles.first.content = t
+    end
+
     def viewBox
       svg_elem = @doc.css('svg').first
       value = svg_elem.attribute('viewBox').value

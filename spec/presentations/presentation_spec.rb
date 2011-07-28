@@ -27,6 +27,11 @@ describe "A Presentation" do
       doc.errors.should be_empty
     end
 
+    it "can receive a title" do
+      p.title = "Test"
+      p.title.should eq("Test")
+    end
+
     describe "handles the content within the svg file" do
       it "should store the content in an svg file" do
         p.fileName.should be_nil
