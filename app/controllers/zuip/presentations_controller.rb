@@ -11,6 +11,24 @@ class Zuip::PresentationsController < ApplicationController
     @presentation = Zuip::Presentation.new
   end
 
+  def create
+    presentation = Zuip::Presentation.new
+    presentation.title = params[:presentation][:title]
+    begin
+      presentation.file = zuip_path(params[:presentation][:fileName])
+    rescue Errno::EEXIST
+      flash[:error] = t "A Presentation with this filename already exists"
+      redirect_to new_presentations_path
+      return
+    end
+    if presentation.save
+      flash[:notice] = t "Presentation created."
+      redirect_to edit_presentations_path(params[:presentation][:fileName])
+    else
+      flash[:error] = t "Creation failed."
+    end
+  end
+
   def show
     path = zuip_path(params[:name])
     begin

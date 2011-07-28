@@ -1,5 +1,8 @@
 Zuip::Application.routes.draw do
   resource 'presentations', :controller => 'zuip/presentations' do
+    member do
+      get ':name/edit' => 'zuip/presentations#edit', :as => :edit
+    end
     collection do
       get 'index'
     end

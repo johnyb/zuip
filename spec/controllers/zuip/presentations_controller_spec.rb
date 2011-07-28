@@ -48,4 +48,21 @@ describe Zuip::PresentationsController do
     end
   end
 
+  describe "POST 'create'" do
+    let(:new_presentation) do { :presentation => {:title => "New Testpresentation", :fileName => "test"}} end
+    it "fails and sends flash error when file exists" do
+      f = File.join(Rails.root,"public","assets/zuip","test.svg")
+      post 'create', new_presentation unless File.exists?(f)
+      post 'create', new_presentation
+      request.flash[:error].should =~ /Presentation with this filename already exists/
+      response.should redirect_to new_presentations_path
+    end
+
+    it "creates a new presentation" do
+      f = File.join(Rails.root,"public","assets/zuip","test.svg")
+      File.delete(f) if File.exists?(f)
+      post 'create', new_presentation
+      response.should redirect_to edit_presentations_path('test')
+    end
+  end
 end
