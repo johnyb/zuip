@@ -26,6 +26,36 @@ describe "A Presentation" do
       doc.css("svg g#waypoints").should_not be_blank
       doc.errors.should be_empty
     end
+
+    describe "handles the content within the svg file" do
+      it "should store the content in an svg file" do
+        p.fileName.should be_nil
+        f = File.join(Rails.root,"tmp","spec","presentations.svg")
+        File.delete(f) if File.exists?(f)
+        p.file = f
+        p.fileName.should == "presentations.svg"
+      end
+
+      it "can be saved" do
+        p.fileName.should be_nil
+        f = File.join(Rails.root,"tmp","spec","presentations.svg")
+        File.delete(f) if File.exists?(f)
+        p.file = f
+        p.title.should be_empty
+        p.title = "Testtitle"
+        p.save
+        p = Zuip::Presentation.new(:source => "#{f}")
+        p.title.should eq("Testtitle")
+      end
+
+      it "should update the content with a given string" do
+        p.content.should be_empty
+        example = '<g class="content"><rect x="10" y="10" width="100" height="100"></rect></g>'
+        p.content=example
+        p.content.should == example
+        p.to_svg.should =~ /rect x="10" y="10" width="100" height="100"/
+      end
+    end
   end
 
   context "with information parsed from the SVG file:" do
@@ -96,26 +126,6 @@ describe "A Presentation" do
 
       it "should extract extents of waypoint marker" do
         p.waypointMarkerSize.should.== [1200,900]
-      end
-    end
-
-    describe "handles the content within the svg file" do
-      let(:p){ Zuip::Presentation.new }
-
-      it "should store the content in an svg file" do
-        p.fileName.should be_nil
-        f = File.join(Rails.root,"tmp","spec","presentations.svg")
-        File.delete(f) if File.exists?(f)
-        p.file = f
-        p.fileName.should == "presentations.svg"
-      end
-
-      it "should update the content with a given string" do
-        p.content.should be_empty
-        example = '<g class="content"><rect x="10" y="10" width="100" height="100"></rect></g>'
-        p.content=example
-        p.content.should == example
-        p.to_svg.should =~ /rect x="10" y="10" width="100" height="100"/
       end
     end
   end

@@ -38,7 +38,7 @@ module Zuip
 
       @source = name
       Dir.mkdir(File.dirname(@source)) unless File.exists?(File.dirname(@source))
-      @doc.write_xml_to(File.new(@source,"w+"))
+      save(true)
     end
     def fileName
       return nil if @source.nil?
@@ -67,6 +67,15 @@ module Zuip
     def content=(str)
       f = Nokogiri::XML::DocumentFragment.parse(str)
       content_element.inner_html = f
+    end
+
+    def save(create = false)
+      return false unless create || (!@source.nil? && File.exists?(@source))
+
+      File.open(@source,"w+") do |f|
+        @doc.write_xml_to(f)
+      end
+      true
     end
 
     private
