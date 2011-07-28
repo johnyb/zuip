@@ -2,7 +2,7 @@ module Zuip
   module Outline
     private
     def waypoints_element
-      @doc.css("#waypoints").first
+      @doc.css("svg g#waypoints").first
     end
 
     def find_waypoints(root, level = "#", headlines = [], parent_path = "")
