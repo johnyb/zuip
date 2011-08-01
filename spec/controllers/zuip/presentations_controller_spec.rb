@@ -64,6 +64,15 @@ describe Zuip::PresentationsController do
       post 'create', new_presentation
       response.should redirect_to edit_presentations_path('test')
     end
+
+    it "the zuip path helper strips the extension from the fileName" do
+      controller.instance_eval do
+        def p_zuip_path(name)
+          zuip_path(name)
+        end
+      end
+      controller.p_zuip_path('test.svg').should eq(controller.p_zuip_path('test'))
+    end
   end
 
   describe "GET 'edit'" do

@@ -54,6 +54,7 @@ class Zuip::PresentationsController < ApplicationController
   private
   def zuip_path(name)
     name = "" if name.nil?
+    name.chomp!('.svg')
     File.join([Rails.root.to_s, "public/assets/zuip", name+'.svg'])
   end
 end
