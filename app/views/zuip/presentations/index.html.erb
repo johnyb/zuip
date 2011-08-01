@@ -1,7 +1,10 @@
 <div>
   <ol id="presentations">
     <% @presentations.each do |p| %>
-      <li><%= link_to p.title, named_presentations_path(p.fileName[0..-5]) %></li>
+      <li>
+        <%= link_to p.title, named_presentations_path(p.fileName[0..-5]) %>
+        <%= link_to t("Edit"), edit_presentations_path(p.fileName[0..-5]) %>
+      </li>
     <% end %>
   </ol>
   <%= link_to t("New ZUI-Presentation"), new_presentations_path %>
