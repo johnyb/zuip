@@ -66,6 +66,20 @@ module Zuip
       @doc.to_s
     end
 
+    def assets
+      assets = []
+      (content_element > "g.content").each { |a| assets << a.to_s }
+      assets
+    end
+
+    def assets=(list)
+      content_element.inner_html = ""
+      list.each do |str|
+        f = Nokogiri::XML::DocumentFragment.parse(str)
+        content_element << f
+      end
+    end
+
     def content
       content_element.inner_html.to_s
     end
@@ -110,8 +124,8 @@ module Zuip
       <metadata><rdf:RDF>
       <dc:title></dc:title>
       </rdf:RDF></metadata>
-      <g id="content" />
-      <g id="waypoints" class="waypoints" />
+      <g id="content"></g>
+      <g id="waypoints" class="waypoints"></g>
       </svg>
       '
     end

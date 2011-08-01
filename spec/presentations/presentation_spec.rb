@@ -142,4 +142,22 @@ describe "A Presentation" do
       end
     end
   end
+
+  describe "assets handling" do
+    let(:assets) do
+      Dir[File.join(RSpec.configuration.fixture_path,"asset*.svg")].sort.map { |f| File.read(f) }
+    end
+    let(:p) { Zuip::Presentation.new }
+
+    it "should assign content from assets" do
+      p.content.should be_blank
+      p.assets = assets
+      p.content.should_not be_blank
+    end
+
+    it "should find assets in content" do
+      p = Zuip::Presentation.new(:source => "#{RSpec.configuration.fixture_path}/presentations.svg")
+      p.assets.size.should eq(assets.size)
+    end
+  end
 end
