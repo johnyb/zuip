@@ -31,32 +31,19 @@
       <![CDATA[
       text {
         font-family : helvetica;
+        font-style : normal;
+        font-weight : normal;
+        text-align : center;
+        line-height : 125%;
+        letter-spacing : 0px;
+        word-spacing : 0px;
+        text-anchor : middle;
+        fill : #000000;
+        fill-opacity : 1;
+        stroke : none;
       }
     ]]></style>
   </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.25283667"
-     inkscape:cx="210.09675"
-     inkscape:cy="836.69056"
-     inkscape:document-units="px"
-     inkscape:current-layer="svg2"
-     showgrid="false"
-     showguides="true"
-     fit-margin-top="50"
-     fit-margin-left="50"
-     fit-margin-right="50"
-     fit-margin-bottom="50"
-     inkscape:window-width="1280"
-     inkscape:window-height="1004"
-     inkscape:window-x="-2"
-     inkscape:window-y="-3"
-     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -86,234 +73,102 @@
       </cc:License>
     </rdf:RDF>
   </metadata>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Presentation"
-     style="display:inline">
-    <rect
-       x="-296.17474"
-       y="364.0246"
-       width="500"
-       height="200"
-       id="rect2989"
-       style="opacity:0.1;fill:#008000" />
-    <rect
-       x="228.82526"
-       y="364.0246"
-       width="500"
-       height="200"
-       id="rect2991"
-       style="opacity:0.1;fill:#008000" />
-    <rect
-       x="-296.17474"
-       y="589.0246"
-       width="500"
-       height="200"
-       id="rect2993"
-       style="opacity:0.1;fill:#ff0000" />
-    <rect
-       x="228.82526"
-       y="589.0246"
-       width="500"
-       height="200"
-       id="rect2995"
-       style="opacity:0.1;fill:#ff0000" />
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;"
-       x="481.66544"
-       y="289.95819"
-       id="text2985"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2987"
-         x="481.66544"
-         y="289.95819">ZUI</tspan><tspan
-         sodipodi:role="line"
-         id="tspan2986"
-         x="481.66544"
-         y="339.95819">Presentations</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:154.12817383px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
-       x="-275.9472"
-       y="123.9341"
-       id="text2989"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2991"
-         x="-275.9472"
-         y="123.9341">Presentations</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;"
-       x="-73.775215"
-       y="289.95819"
-       id="text2993"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2995"
-         x="-73.775215"
-         y="289.95819">Slide-Show</tspan><tspan
-         sodipodi:role="line"
-         x="-73.775215"
-         y="339.95819"
-         id="tspan2997">Presentations</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
-       x="-541.88904"
-       y="455.67255"
-       id="text3053"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3055"
-         x="-541.88904"
-         y="455.67255">advantages</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
-       x="-521.88904"
-       y="675.67249"
-       id="text3057"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3059"
-         x="-521.88904"
-         y="675.67249">Problems</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
-       x="-250.46046"
-       y="-130.04175"
-       id="text3069"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3071"
-         x="-250.46046"
-         y="-130.04175">Prezi</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
-       x="132.39667"
-       y="-141.47031"
-       id="text3073"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3075"
-         x="132.39667"
-         y="-141.47031">CounterPoint</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
-       x="664.27887"
-       y="-141.47032"
-       id="text3077"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3079"
-         x="664.27887"
-         y="-141.47032">ZUIP</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
-       x="-153.453"
-       y="435.78156"
-       id="text3018"
-       sodipodi:linespacing="150%"><tspan
-         sodipodi:role="line"
-         x="-153.453"
-         y="435.78156"
-         id="tspan3044">Tools</tspan><tspan
-         sodipodi:role="line"
-         x="-153.453"
-         y="471.78156"
-         id="tspan3042">Experience</tspan><tspan
-         sodipodi:role="line"
-         x="-153.453"
-         y="507.78156"
-         id="tspan3034">Simplicity / linearity</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
-       x="-171.63176"
-       y="676.85803"
-       id="text3050"
-       sodipodi:linespacing="150%"><tspan
-         sodipodi:role="line"
-         x="-171.63176"
-         y="676.85803"
-         id="tspan3056">Jumping between slides</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
-       x="287.87805"
-       y="434.94019"
-       id="text3018-6"
-       sodipodi:linespacing="150%"><tspan
-         sodipodi:role="line"
-         x="287.87805"
-         y="434.94019"
-         id="tspan3044-9">Spatial coding of information</tspan><tspan
-         sodipodi:role="line"
-         x="287.87805"
-         y="470.94019"
-         id="tspan3042-3">Natural way of describing a topic</tspan><tspan
-         sodipodi:role="line"
-         x="287.87805"
-         y="506.94019"
-         id="tspan3034-7">Better orientation for the audience</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;"
-       x="303.62607"
-       y="672.68274"
-       id="text3018-6-6"
-       sodipodi:linespacing="150%"><tspan
-         sodipodi:role="line"
-         x="303.62607"
-         y="672.68274"
-         id="tspan3034-7-7">Danger of motion-sickness</tspan></text>
+  <g id="content">
+    <g id="asset1" class="content" transform="translate(250,123) scale(1)">
+      <text style="font-size:154.12817383px;" x="0" y="0" id="text2989" sodipodi:linespacing="125%">
+        <tspan sodipodi:role="line" id="tspan2991" x="0" y="0">Presentations</tspan>
+      </text>
+    </g>
+    <g id="asset2" class="content" transform="translate(250,660) scale(1)">
+      <rect x="-510" y="-210" width="500" height="200" id="rect2989" style="opacity:0.1;fill:#008000" />
+      <rect x="10" y="-210" width="500" height="200" id="rect2991" style="opacity:0.1;fill:#008000" />
+      <rect x="-510" y="10" width="500" height="200" id="rect2993" style="opacity:0.1;fill:#ff0000" />
+      <rect x="10" y="10" width="500" height="200" id="rect2995" style="opacity:0.1;fill:#ff0000" />
+      <text style="font-size:40px;" x="270" y="-250" id="text2985" sodipodi:linespacing="125%">
+        <tspan sodipodi:role="line" id="tspan2987" x="270" y="-300">ZUI</tspan>
+        <tspan sodipodi:role="line" id="tspan2986" x="270" y="-250">Presentations</tspan>
+      </text>
+      <text style="font-size:40px;" x="-260" y="-250" id="text2993" sodipodi:linespacing="125%">
+        <tspan sodipodi:role="line" id="tspan2995" x="-260" y="-300">Slide-Show</tspan>
+        <tspan sodipodi:role="line" x="-260" y="-250" id="tspan2997">Presentations</tspan>
+      </text>
+      <text style="font-size:40px;" x="-650" y="-110" id="text3053" sodipodi:linespacing="125%">
+        <tspan sodipodi:role="line" id="tspan3055" x="-650" y="-110">advantages</tspan>
+      </text>
+      <text style="font-size:40px;" x="-650" y="110" id="text3057" sodipodi:linespacing="125%">
+        <tspan sodipodi:role="line" id="tspan3059" x="-650" y="110">Problems</tspan>
+      </text>
+      <text style="font-size:24px;text-align:left;text-anchor:start;" x="-460" y="-150" id="text3018" sodipodi:linespacing="150%">
+        <tspan sodipodi:role="line" x="-460" y="-150" id="tspan3044">Tools</tspan>
+        <tspan sodipodi:role="line" x="-460" y="-110" id="tspan3042">Experience</tspan>
+        <tspan sodipodi:role="line" x="-460" y="-70" id="tspan3034">Simplicity / linearity</tspan>
+      </text>
+      <text style="font-size:24px;text-align:left;text-anchor:start;" x="-460" y="110" id="text3050" sodipodi:linespacing="150%">
+        <tspan sodipodi:role="line" x="-460" y="110" id="tspan3056">Jumping between slides</tspan>
+      </text>
+      <text style="font-size:24px;text-align:left;text-anchor:start;" x="50" y="-150" id="text3018-6" sodipodi:linespacing="150%">
+        <tspan sodipodi:role="line" x="50" y="-150" id="tspan3044-9">Spatial coding of information</tspan>
+        <tspan sodipodi:role="line" x="50" y="-110" id="tspan3042-3">Natural way of describing a topic</tspan>
+        <tspan sodipodi:role="line" x="50" y="-70" id="tspan3034-7">Better orientation for the audience</tspan>
+      </text>
+      <text style="font-size:24px;text-align:left;text-anchor:start;" x="50" y="110" id="text3018-6-6" sodipodi:linespacing="150%">
+        <tspan sodipodi:role="line" id="tspan3034-7-7">Danger of motion-sickness</tspan>
+      </text>
+    </g>
+    <g id="asset3" class="content" transform="translate(-250,-440) scale(1)">
+      <text style="font-size:40px;" x="0" y="0" id="text3069" sodipodi:linespacing="125%">
+        <tspan sodipodi:role="line" id="tspan3071" x="0" y="0">Prezi</tspan>
+      </text>
+    </g>
+    <g id="asset4" class="content" transform="translate(250,-440) scale(1)">
+      <text style="font-size:40px;" x="0" y="0" id="text3073" sodipodi:linespacing="125%">
+        <tspan sodipodi:role="line" id="tspan3075" x="0" y="0">CounterPoint</tspan>
+      </text>
+    </g>
+    <g id="asset5" class="content" transform="translate(750,-440) scale(1)">
+      <text style="font-size:40px;" x="0" y="0" id="text3077" sodipodi:linespacing="125%">
+        <tspan sodipodi:role="line" id="tspan3079" x="0" y="0">ZUIP</tspan>
+      </text>
+    </g>
   </g>
   <g id="waypoints" style="display:inline" class="waypoints">
     <g class="head1">
-      <use xlink:href="#waypoint" transform="translate(200,80) scale(0.8)" />
+      <use xlink:href="#waypoint" transform="translate(250,80) scale(0.8)" />
       <title>Title</title>
     </g>
     <g class="head1">
-      <use xlink:href="#waypoint" transform="translate(-70,300) scale(0.23)" />
+      <use xlink:href="#waypoint" transform="translate(-10,350) scale(0.23)" />
       <title>Slides</title>
       <g class="head2">
-        <use xlink:href="#waypoint" transform="translate(-70,460) scale(0.23)" />
+        <use xlink:href="#waypoint" transform="translate(-100,550) scale(0.23)" />
         <title>Advantages</title>
       </g>
       <g class="head2">
-        <use xlink:href="#waypoint" transform="translate(-40,690) scale(0.23)" />
+        <use xlink:href="#waypoint" transform="translate(-85,770) scale(0.23)" />
         <title>Problems</title>
       </g>
     </g>
     <g class="head1">
-      <use xlink:href="#waypoint" transform="translate(475,290) scale(0.27)" />
+      <use xlink:href="#waypoint" transform="translate(520,350) scale(0.23)" />
       <title>ZUI Presentations</title>
       <g class="head2">
-        <use xlink:href="#waypoint" transform="translate(475,460) scale(0.33)" />
+        <use xlink:href="#waypoint" transform="translate(475,550) scale(0.33)" />
         <title>Advantages</title>
       </g>
       <g class="head2">
-        <use xlink:href="#waypoint" transform="translate(445,690) scale(0.25)" />
+        <use xlink:href="#waypoint" transform="translate(445,770) scale(0.25)" />
         <title>Problems</title>
       </g>
     </g>
     <g class="head1">
-      <use xlink:href="#waypoint" transform="translate(250,-100) scale(0.9)" />
+      <use xlink:href="#waypoint" transform="translate(250,-120) scale(1)" />
       <title>Solutions</title>
       <g class="head2">
-        <use xlink:href="#waypoint" transform="translate(-200,-150) scale(0.23)" />
+        <use xlink:href="#waypoint" transform="translate(-250,-440) scale(0.23)" />
         <title>Prezi</title>
       </g>
       <g class="head2">
-        <use xlink:href="#waypoint" transform="translate(250,-150) scale(0.23)" />
+        <use xlink:href="#waypoint" transform="translate(250,-440) scale(0.23)" />
         <title>CounterPoint</title>
       </g>
       <g class="head2">
