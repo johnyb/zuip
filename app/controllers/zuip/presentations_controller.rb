@@ -3,7 +3,13 @@ class Zuip::PresentationsController < ApplicationController
 
   def index
     @presentations = Dir.glob(zuip_path('*'))
-    @presentations.map!{ |p| Zuip::Presentation.new(:source => p) }
+    @presentations.map! do |p|
+      begin
+        Zuip::Presentation.new(:source => p)
+      rescue
+        nil
+      end
+    end
     @presentations = @presentations.select{ |p| not p.nil? }
   end
 

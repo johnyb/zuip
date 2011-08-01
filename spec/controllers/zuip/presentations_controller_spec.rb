@@ -34,6 +34,27 @@ describe Zuip::PresentationsController do
     end
   end
 
+  describe "GET 'index'" do
+    it "should not fail with empty svg files in assets dir" do
+      File.new(File.join(Rails.root,"public","assets","zuip","empty_test.svg"),"w+")
+      get 'index'
+      assigns(:presentations)
+      File.delete(File.join(Rails.root,"public","assets","zuip","empty_test.svg"))
+    end
+
+    it "assigns a few presentations" do
+      get 'index'
+      assigns(:presentations).should_not be_empty
+    end
+
+    it "assigns no presentations that are nil" do
+      File.new(File.join(Rails.root,"public","assets","zuip","empty_test.svg"),"w+")
+      get 'index'
+      assigns(:presentations).each { |p| p.should_not be_nil }
+      File.delete(File.join(Rails.root,"public","assets","zuip","empty_test.svg"))
+    end
+  end
+
   describe "GET 'new'" do
     it "should be successful" do
       get 'new'
