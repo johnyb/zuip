@@ -29,6 +29,17 @@ class Zuip::PresentationsController < ApplicationController
     end
   end
 
+  def edit
+    path = zuip_path(params[:name])
+    begin
+      @presentation = Zuip::Presentation.new(:source => path)
+      render :locals => { :name => params[:name] }
+    rescue Errno::ENOENT
+      flash[:alert] = t("Could not open file")+": #{path}"
+      redirect_to presentations_path
+    end
+  end
+
   def show
     path = zuip_path(params[:name])
     begin

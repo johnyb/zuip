@@ -65,4 +65,27 @@ describe Zuip::PresentationsController do
       response.should redirect_to edit_presentations_path('test')
     end
   end
+
+  describe "GET 'edit'" do
+    let(:new_presentation) do { :presentation => {:title => "New Testpresentation", :fileName => "test"}} end
+    before(:each) do
+      f = File.join(Rails.root,"public","assets/zuip","test.svg")
+      File.delete(f) if File.exists?(f)
+      post 'create', new_presentation
+    end
+
+    it "should render the edit partial for existing presentation" do
+      get 'edit', :name => 'test'
+      assigns(:presentation).title.should eq("New Testpresentation")
+      response.should render_template('zuip/presentations/edit')
+      response.should render_template('layouts/application')
+    end
+
+    it "fails when file doesn’t exist" do
+      get 'edit', :name => 'bar'
+      assigns(:presentation).should be_nil
+      request.flash[:alert].should =~ /bar\.svg$/
+      response.should redirect_to presentations_path
+    end
+  end
 end
