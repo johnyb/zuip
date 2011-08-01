@@ -1,0 +1,21 @@
+<% content_for :header do %>
+  <%= javascript_include_tag 'jquery.svg.min' %>
+  <%= javascript_include_tag 'jquery.svgdom.min' %>
+  <%= javascript_include_tag 'edit' %>
+<% end %>
+
+<%= form_for :presentation, :url => { :action => 'update', :name => @presentation.fileName}, :html => {} do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :fileName %>
+  <%= f.text_field :fileName %>
+
+  <div id="svgcanvas"><%= @presentation.to_svg.html_safe %></div>
+
+  <% a = @presentation.assets %>
+  <% a.each_index do |i| %>
+    <%= text_area_tag "asset_#{i}", a[i], :style => 'display : none;' %>
+  <% end %>
+  <%= f.submit t(:save, :scope => :edit) %>
+  <%= f.submit t(:cancel, :scope => :edit) %>
+<% end %>
