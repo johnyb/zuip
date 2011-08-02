@@ -63,8 +63,8 @@ class Zuip::PresentationsController < ApplicationController
 
   private
   def find_presentation
-    path = zuip_path(params[:name])
     begin
+      path = zuip_path(params[:name])
       @presentation = Zuip::Presentation.new(:source => path)
     rescue Errno::ENOENT
       flash[:alert] = t("Could not open file")+": #{path}"
@@ -73,7 +73,7 @@ class Zuip::PresentationsController < ApplicationController
   end
 
   def zuip_path(name)
-    name = "" if name.nil?
+    raise Errno::ENOENT if name.nil?
     name.chomp!('.svg')
     File.join([Rails.root.to_s, "public/assets/zuip", name+'.svg'])
   end
