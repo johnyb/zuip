@@ -1,7 +1,7 @@
 class Zuip::PresentationsController < ApplicationController
   layout 'application', :except => [:show]
 
-  before_filter :find_presentation, :only => [:edit, :show]
+  before_filter :find_presentation, :only => [:edit, :show, :update]
 
   def index
     @presentations = Dir.glob(zuip_path('*'))
@@ -35,6 +35,22 @@ class Zuip::PresentationsController < ApplicationController
     else
       flash[:error] = t "Creation failed."
     end
+  end
+
+  def update
+    cancel = params[:commit].include?(t(:cancel, :scope => :edit))
+    redirect_to named_presentations_path(params[:name]) if cancel
+    return if @presentation.nil? || cancel
+    unless @presentation.fileName == params[:presentation][:fileName] then
+      old_file = @presentation.fileName
+      File.rename(zuip_path(old_file), zuip_path(params[:presentation][:fileName]))
+      @presentation.source = zuip_path(params[:presentation][:fileName])
+    end
+    @presentation.title = params[:presentation][:title] unless @presentation.title == params[:presentation][:title]
+    @presentation.assets = params.keys.select { |k| k =~ /^asset_\d*$/ }.map { |item| params[item] }
+
+    @presentation.save
+    redirect_to named_presentations_path(@presentation.fileName.chomp!('.svg'))
   end
 
   def edit

@@ -118,4 +118,67 @@ describe Zuip::PresentationsController do
       response.should redirect_to presentations_path
     end
   end
+
+  describe "PUT 'update'" do
+    let(:p) { Zuip::Presentation.new(:source => "#{RSpec.configuration.fixture_path}/presentations.svg") }
+    let(:data) do
+      { :name => 'presentations',
+        :presentation => { :title => 'About Zooming Presentations', :fileName => 'presentations.svg'},
+        :asset_0 => p.assets[0],
+        :asset_1 => p.assets[1],
+        :asset_2 => p.assets[2],
+        :asset_3 => p.assets[3],
+        :asset_4 => p.assets[4],
+        :commit => 'Save'
+        }
+    end
+    it "should find the presentation" do
+      put 'update', data
+      assigns(:presentation).fileName.should eq('presentations.svg')
+      response.should redirect_to named_presentations_path(data[:name])
+    end
+
+    it "should rename the file" do
+      put 'update', data.merge({ :presentation => { :title => 'About Zooming Presentations', :fileName => 'presentations_tmp.svg' }})
+      response.should redirect_to named_presentations_path(assigns(:presentation).fileName.chomp!('.svg'))
+      assigns(:presentation).fileName.should eq('presentations_tmp.svg')
+      f_old = File.join(Rails.root,"public","assets","zuip","presentations.svg")
+      f_new = File.join(Rails.root,"public","assets","zuip","presentations_tmp.svg")
+      File.exists?(f_old).should be_false
+      File.rename(f_new, f_old)
+    end
+
+    it "should update the title" do
+      put 'update', data.merge({ :presentation => { :title => 'temp_title', :fileName => 'presentations.svg' }})
+      response.should redirect_to named_presentations_path('presentations')
+      controller.instance_eval do
+        def p_zuip_path(name)
+          zuip_path(name)
+        end
+      end
+      # reload the presentation from the file
+      assigns(:presentation).source = controller.p_zuip_path(assigns(:presentation).fileName)
+      assigns(:presentation).title.should eq('temp_title')
+      #reset the title
+      assigns(:presentation).title = data[:presentation][:title]
+      assigns(:presentation).save
+    end
+
+    it "should update the assets" do
+      put 'update', data.merge({ :asset_3 => p.assets[0]})
+      response.should redirect_to named_presentations_path('presentations')
+      controller.instance_eval do
+        def p_zuip_path(name)
+          zuip_path(name)
+        end
+      end
+      # reload the presentation from the file
+      assigns(:presentation).source = controller.p_zuip_path(assigns(:presentation).fileName)
+      assigns(:presentation).assets[3].should eq(p.assets[0])
+      assigns(:presentation).assets[3].should_not eq(p.assets[3])
+      # reset the assets
+      assigns(:presentation).assets = p.assets
+      assigns(:presentation).save
+    end
+  end
 end
