@@ -12,7 +12,7 @@ describe 'zuip/presentations/edit.html.erb' do
     it { rendered.should have_css("form > label[for=presentation_title]") }
     it { rendered.should have_css("form > input[id=presentation_title]") }
     it { (0..4).each { |i| rendered.should have_css("form > textarea[id=asset_#{i}]") } }
-    it { rendered.should have_css("form > input[type=submit][value=Cancel]") }
-    it { rendered.should have_css("form > input[type=submit][value=Save]") }
+    it { rendered.should have_css("form > input[type=submit][value=#{t(:cancel, :scope => :edit)}]") }
+    it { rendered.should have_css("form > input[type=submit][value=#{t(:save, :scope => :edit)}]") }
   end
 end
