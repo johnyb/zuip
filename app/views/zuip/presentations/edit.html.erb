@@ -4,7 +4,7 @@
   <%= javascript_include_tag 'edit' %>
 <% end %>
 
-<%= form_for :presentation, :url => { :action => 'update', :name => @presentation.fileName }, :html => { :method => 'put' } do |f| %>
+<%= form_for :presentation, :url => { :action => 'update', :name => @presentation.fileName }, :html => { :method => 'put' }, :remote => true do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
   <%= f.label :fileName %>

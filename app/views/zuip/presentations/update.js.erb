@@ -1,0 +1,5 @@
+<% if @button == 'add_asset' then %>
+  $("form > div#assets_fields").append('<%= text_area_tag "asset_#{@presentation.assets.size-1}", @presentation.assets.last %>');
+<% else %>
+  window.location = "<%= @new_url %>";
+<% end %>

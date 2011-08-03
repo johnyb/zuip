@@ -45,7 +45,7 @@ Feature: Editing presentations
     And I press the "del" key
     Then the landscape contains no objects
 
-  @wip @it3 @javascript
+  @it3 @javascript
   Scenario: Add assets
     Given a landscape
     When I press the add asset button
