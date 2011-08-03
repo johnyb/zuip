@@ -38,9 +38,8 @@ class Zuip::PresentationsController < ApplicationController
   end
 
   def update
-    cancel = params[:commit].include?(t(:cancel, :scope => :edit))
-    redirect_to named_presentations_path(params[:name]) if cancel
-    return if @presentation.nil? || cancel
+    return if @presentation.nil?
+
     unless @presentation.fileName == params[:presentation][:fileName] then
       old_file = @presentation.fileName
       File.rename(zuip_path(old_file), zuip_path(params[:presentation][:fileName]))
@@ -48,9 +47,20 @@ class Zuip::PresentationsController < ApplicationController
     end
     @presentation.title = params[:presentation][:title] unless @presentation.title == params[:presentation][:title]
     @presentation.assets = params.keys.select { |k| k =~ /^asset_\d*$/ }.map { |item| params[item] }
+    @presentation.assets = @presentation.assets << '<g class="content" />' if (params[:commit] == 'add_asset')
 
-    @presentation.save
-    redirect_to named_presentations_path(@presentation.fileName.chomp!('.svg'))
+    @presentation.save if params[:commit].include?(t(:save, :scope => :edit))
+    @new_url = named_presentations_path(@presentation.fileName.chomp!('.svg')) unless params[:commit] == 'add_asset'
+
+    respond_to do |format|
+      format.js do
+        @button = params[:commit]
+      end
+      format.html do
+        redirect_to @new_url unless @new_url.nil?
+        render 'edit' if @new_url.nil?
+      end
+    end
   end
 
   def edit

@@ -14,6 +14,8 @@ module NavigationHelpers
       '/presentations/'
     when /^the presentations edit page for \"(.*)\"$/
       "/presentations/#{$1}/edit"
+    when /^the presentation page for \"(.*)\"$/
+      "/presentations/#{$1}"
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
@@ -38,6 +40,8 @@ module NavigationHelpers
     when /^About Zooming Presentations$/
       path_to_presentation("presentations")
     when /^semantic_desktop$/
+      "#{::Rails.root}/public/assets/zuip/#{title.underscore}.svg"
+    when /^test$/
       "#{::Rails.root}/public/assets/zuip/#{title.underscore}.svg"
     else
       begin
