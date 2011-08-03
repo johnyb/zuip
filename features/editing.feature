@@ -19,7 +19,7 @@ Feature: Editing presentations
     Then the landscape contains no groups
     But the landscape contains 3 objects
 
-  @wip @it3 @javascript
+  @tbd @it3 @javascript
   Scenario: Group objects
     Given a landscape containing the objects
       | name    |
