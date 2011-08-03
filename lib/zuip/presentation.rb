@@ -107,7 +107,13 @@ module Zuip
 
     def initial_svg
       '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-      <svg xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 2400 1800">
+      <svg
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 2400 1800">
       <defs>
       <g id="waypoint" style="opacity:0.001;color:#000000;fill:none;stroke:#004000;stroke-width:5;">
       <rect x="-600" y="-450" width="1200" height="900" />
