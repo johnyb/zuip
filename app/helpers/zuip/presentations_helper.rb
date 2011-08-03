@@ -26,4 +26,9 @@ module Zuip::PresentationsHelper
     id = item[:path].downcase.delete("/").split(" ").join('__')
     "outline_link_#{id}"
   end
+
+  def textarea_style_for(asset)
+    return 'display : none;' unless Nokogiri::XML::DocumentFragment.parse(asset).css("g.content").children.empty?
+    ''
+  end
 end
