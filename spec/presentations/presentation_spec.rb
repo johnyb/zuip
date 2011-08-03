@@ -63,8 +63,12 @@ describe "A Presentation" do
     end
   end
 
-  context "with information parsed from the SVG file:" do
+  context "with information parsed from an SVG file" do
     let(:p) { Zuip::Presentation.new(:source => "#{RSpec.configuration.fixture_path}/presentations.svg") }
+
+    it "should load without problems" do
+      p.should_not be_nil
+    end
 
     it "provides a file name" do
       p.fileName.should == "presentations.svg"
