@@ -11,7 +11,7 @@ describe 'zuip/presentations/edit.html.erb' do
     it { rendered.should have_css("form > input[id=presentation_title]") }
     it { rendered.should have_css("form > label[for=presentation_title]") }
     it { rendered.should have_css("form > input[id=presentation_title]") }
-    it { (0..4).each { |i| rendered.should have_css("form > textarea[id=asset_#{i}]") } }
+    it { (0..4).each { |i| rendered.should have_css("form > div#assets_fields > textarea[id=asset_#{i}]") } }
     it { rendered.should have_css("form > input[type=submit][value=#{t(:cancel, :scope => :edit)}]") }
     it { rendered.should have_css("form > input[type=submit][value=#{t(:save, :scope => :edit)}]") }
   end

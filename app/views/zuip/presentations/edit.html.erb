@@ -12,10 +12,12 @@
 
   <div id="svgcanvas"><%= @presentation.to_svg.html_safe %></div>
 
-  <% a = @presentation.assets %>
-  <% a.each_index do |i| %>
-    <%= text_area_tag "asset_#{i}", a[i], :style => 'display : none;' %>
-  <% end %>
+  <div id="assets_fields">
+    <% a = @presentation.assets %>
+    <% a.each_index do |i| %>
+      <%= text_area_tag "asset_#{i}", a[i], :style => textarea_style_for(a[i]) %>
+    <% end %>
+  </div>
   <%= f.submit t(:save, :scope => :edit) %>
   <%= f.submit t(:cancel, :scope => :edit) %>
 <% end %>
