@@ -13,6 +13,10 @@
   <div id="svgcanvas"><%= @presentation.to_svg.html_safe %></div>
 
   <div id="assets_fields">
+    <button id="add_asset_button" name="commit" value="add_asset" title="<%= t(:add_asset, :scope => :edit) %>">
+      <%= image_tag 'add.png', :alt => t(:add_asset, :scope => :edit) %>
+    </button>
+
     <% a = @presentation.assets %>
     <% a.each_index do |i| %>
       <%= text_area_tag "asset_#{i}", a[i], :style => textarea_style_for(a[i]) %>

@@ -10,5 +10,6 @@ en:
   'Create new presentation': 'Create new presentation'
 
   edit:
+    add_asset: "Add Asset"
     save: "Save"
     cancel: "Cancel"
