@@ -7,6 +7,8 @@ $(function() {
     }
     rect = document.getElementById("selectionBB");
     rect.setAttributeNS(null,"style","visibility:hidden; pointer-events : none;");
+
+    $('form div#assets_fields > textarea').hide();
   }
   function select(evt){
     click_target=evt.target;
@@ -30,8 +32,20 @@ $(function() {
     }
     return result;
   }
+  function show_edit_textarea(evt){
+    group = findParentWithClass(evt.target,"content");
+    $('form div#assets_fields > textarea').hide();
+
+    $('form div#assets_fields > textarea').each(function(i,elem) {
+      if (elem.value.indexOf("id=\"" + group.id + '"') > 0) {
+        $("#"+elem.id).show();
+      }
+    });
+    evt.cancelBubble = true;
+  }
 
   $("#svgcanvas > svg").find("#content").click(select);
+  $("#svgcanvas > svg").find("#content").click(show_edit_textarea);
   $("#svgcanvas > svg").click(resetSelection);
   $("#svgcanvas > svg").svg();
   var svg = $('#svgcanvas > svg').svg('get');
